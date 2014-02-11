@@ -1,0 +1,31 @@
+/* line 7, ../sass/index.scss */
+.wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #E9E7E7;
+  border: 5px dotted #228DC1;
+  font-size: 20px;
+}
+/* line 15, ../sass/index.scss */
+.wrapper a {
+  text-decoration: none;
+  color: red;
+}
+/* line 18, ../sass/index.scss */
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 19, ../sass/index.scss */
+p {
+  font-size: 15px;
+}
