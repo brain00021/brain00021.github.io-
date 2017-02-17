@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="122px" viewBox="0 0 128 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>logo copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="52.6794434%" y1="115.367252%" x2="52.6794434%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#029BE7" offset="0%"></stop>
+            <stop stop-color="#076B62" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-copy">
+            <rect id="Rectangle-8" fill="url(#linearGradient-1)" x="0" y="0" width="128" height="122" rx="8"></rect>
+            <path d="M114.280856,59.9868166 C114.280856,89.0897489 92.6672776,112.683281 66.0066447,112.683281 C39.3422509,112.683281 17.7286725,89.0897489 17.7286725,59.9868166 C17.7286725,30.879779 39.3422509,7.28624657 66.0066447,7.28624657 C92.6672776,7.28624657 114.280856,30.879779 114.280856,59.9868166 Z" id="Stroke-1" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M87.5878799,63.4566711 C81.4464194,88.1258092 60.2615773,103.894516 37.8695039,102.08405 C42.683386,106.152467 48.2832848,109.276649 54.5112447,111.124064 C79.9872113,118.682041 106.275521,102.141525 113.236845,74.1716737 C120.19817,46.2059275 105.196158,17.415003 79.7201913,9.86113148 C76.7152759,8.97026728 73.6990779,8.42425374 70.7092058,8.18614257 C85.5607842,20.744454 92.8417809,42.330463 87.5878799,63.4566711 L147.908203,103.005859" id="Fill-3" fill="#FFFFFF"></path>
+            <path d="M70.7080775,8.18450043 L37.8721365,102.086513" id="Stroke-5" stroke="#FFFFFF" stroke-width="2"></path>
+            <polygon id="Stroke-7" stroke="#FFFFFF" stroke-width="2.6500001" stroke-linecap="round" stroke-linejoin="round" points="109.080359 83.905494 122.65325 59.7741587 109.512856 37.1330709 92.2693802 7.31991056 65.616269 7.31991056 38.3877484 7.31991056 21.1480331 37.1330709 8.29346363 59.4416242 22.1559397 83.9917067 39.1135915 114.0594 65.3304447 114.0594 92.1189464 114.0594"></polygon>
+        </g>
+    </g>
+</svg>

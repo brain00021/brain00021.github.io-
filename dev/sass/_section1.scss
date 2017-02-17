@@ -1,0 +1,92 @@
+$banner-color:#fff;
+#section0 {
+    text-align: center;
+    color: $banner-color;
+    h1 {
+        font-size: 7.5rem;
+        color: $banner-color;
+        animation: colorchange1 15s infinite;
+    }
+    h5 {
+        font-size: 2.5rem;
+        span {
+            border-right: .05em solid;
+            animation: caret 1s steps(1) infinite;
+        }
+    }
+    .mouse-wheel {
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        font-size: 0.5rem;
+        .mouse {
+            margin: auto;
+        }
+        p {
+            text-align: center;
+            letter-spacing: 12px;
+            text-indent: 12px;
+            margin-top: 10px;
+        }
+    }
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:$md) {
+    #section0 {
+        h1 {
+            font-size: 4.5rem;
+        }
+        h5 {
+            font-size: 1.5rem;
+        }
+    }
+    #menu .row a{
+    	span{display: block;}
+    }
+}
+
+$dark:#000;
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes colorchange1 {
+    0% {
+        color: $banner-color;
+    }
+    50% {
+        color: $banner-color;
+    }
+    52% {
+        color: $dark;
+    }
+    54% {
+        color: $banner-color;
+    }
+    56% {
+        color: $dark;
+    }
+    58% {
+        color: $banner-color;
+    }
+    60% {
+        color: $dark;
+    }
+    62% {
+        color: $banner-color;
+    }
+    100% {
+        color: $banner-color;
+    }
+}

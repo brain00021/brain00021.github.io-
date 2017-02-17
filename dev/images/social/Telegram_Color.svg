@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Telegram_Color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="66.67%" y1="16.67%" x2="41.67%" y2="75%" id="linearGradient-1">
+            <stop stop-color="#37AEE2" offset="0%"></stop>
+            <stop stop-color="#1E96C8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="61.2346759%" y1="43.69%" x2="74.7064382%" y2="80.24%" id="linearGradient-2">
+            <stop stop-color="#EFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1395.000000, -2740.000000)">
+            <g id="social" transform="translate(1222.000000, 2740.000000)">
+                <g id="Telegram" transform="translate(173.000000, 0.000000)">
+                    <ellipse id="Oval" fill="url(#linearGradient-1)" cx="15" cy="15" rx="15" ry="15"></ellipse>
+                    <path d="M12.25,21.875 C11.76405,21.875 11.846625,21.6915125 11.679025,21.2288125 L10.25,16.5257375 L21.25,10" id="Shape" fill="#C8DAEA"></path>
+                    <path d="M12.25,21.875 C12.625,21.875 12.7906875,21.7035 13,21.5 L15,19.55525 L12.50525,18.050875" id="Shape" fill="#A9C9DD"></path>
+                    <path d="M12.505,18.05125 L18.55,22.517375 C19.2398125,22.8979875 19.737675,22.700925 19.9095,21.8769375 L22.370125,10.2815625 C22.62205,9.2715375 21.9851125,8.8134375 21.3252,9.1130375 L6.87645,14.6844125 C5.8901875,15.08 5.8959375,15.6302375 6.696675,15.8754125 L10.40455,17.0327 L18.988675,11.617075 C19.3939125,11.3713375 19.7658375,11.5034513 19.460575,11.774375" id="Shape" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+.container-title {
+    border-bottom: 3px inset #eee;
+    margin-bottom: 20px;
+    position: relative;
+    @include pie-clearfix;
+    h4 {
+        color: #fff;
+        font-size: 5rem;
+        text-align: left;
+        line-height: 5rem;
+        // margin-top: 30px;
+        float: left;
+        text-shadow:1px 2px 0px rgba(#000,1);
+    }
+    span {
+        display: inline-block;
+        float: left;
+        position: relative;
+        @include size(98px, 55px);
+        background: transparent url(../images/rocket.png) no-repeat top center;
+        animation: rocket 5s infinite linear;
+    }
+}
+
+@keyframes rocket {
+    0 {
+        top: 2px;
+        right: 0px;
+        transform: rotate(0deg);
+    }
+    20% {
+        top: 0px;
+        right: 5px;
+        transform: rotate(2deg);
+        background: url(../images/rocket2.png) no-repeat top center;
+    }
+    50% {
+        top: -2px;
+        right: 5px;
+        transform: rotate(0deg);
+        background: transparent url(../images/rocket.png) no-repeat top center;
+    }
+    70% {
+        top: 0px;
+        transform: rotate(-2deg);
+        right:0px;
+        background: url(../images/rocket2.png) no-repeat top center;
+    }
+    100% {
+        top: 0px;
+        right: 0px;
+        transform: rotate(0deg);
+        background: transparent url(../images/rocket.png) no-repeat top center;
+    }
+}

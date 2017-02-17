@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Brian's B612 planets</title>
+    <meta name="author" content="Brian Li" />
+    <meta name="description" content="My profile website" />
+    <meta name="keywords" content="profile,brain,brian,issue,letto,mosntervillage,labarmachine" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="bookmark" href="./images/favicon.ico" />
+    <!-- plugin css -->
+    <link rel="stylesheet" type="text/css" href="lib/css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- plugin js -->
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="lib/js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.fullPage.js"></script>
+    <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="lib/js/typewriter.js"></script>
+</head>
+
+<body>
+    <!-- menu -->
+    <ul id="menu" class="menu-position container-fulid">
+        <div class="row">
+            <li data-menuanchor="topfullview" class=" col-xs-3 col-md-3">
+                <a href="#topfullview">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    <p>Topview</p>
+                </a>
+            </li>
+            <li class="col-md-3 col-xs-3" data-menuanchor="recent-projecte">
+                <a href="#recent-project">
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                    <p>Recent Project</p>
+                </a>
+            </li>
+            <li class="col-md-3 col-xs-3" data-menuanchor="profile">
+                <a href="#profile">
+                    <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span>
+                    <p>About me</p>
+                </a>
+            </li>
+            <li class="col-md-3 col-xs-3" data-menuanchor="contect-me">
+                <a href="#contect-me">
+                    <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                    <p>Contect Us</p>
+                </a>
+            </li>
+        </div>
+    </ul>
+    <div id="fullpage">
+        <!-- index-fullview -->
+        <div class="section active" id="section0">
+            <h1>Brian’s B612 Planet</h1>
+            <h5>Website designer & Coder</h5>
+            <h5>2013-2017</h5>
+            <div class="mouse-wheel">
+                <div class="mouse"></div>
+                <p>Scroll</p>
+            </div>
+            <canvas id="pixie" width="100%" height="100%"></canvas>
+        </div>
+        <!-- project -->
+        <div class="section" id="section1">
+            <div id="section1-container" class="container">
+                <div class="container-title">
+                    <span></span>
+                    <h4>Rcent Project</h4>
+                </div>
+                <div class="row profile-collect">
+                    <div class="col-xs-12 col-sm-4 col-md-4 ">
+                        <a href="#" class="profile-nav">
+                            <h6 class="profile-title">Monster Village-Letto Game</h6>
+                            <div class="profile-work"></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4  col-md-4">
+                        <a href="#" class="profile-nav">
+                            <h6 class="profile-title">Monster Village - Slot machine</h6>
+                            <div class="profile-work"></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4  col-md-4 ">
+                        <a href="#" class="profile-nav">
+                            <h6 class="profile-title">Monster Village - E-commerence</h6>
+                            <div class="profile-work"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-container container-fluid"></div>
+        </div>
+        <!-- profile -->
+        <div class="section" id="section2">
+            <div id="section2-container" class="container">
+                <div class="container-title">
+                    <span></span>
+                    <h4>Profile</h4>
+                </div>
+                <div class="containter-resume row">
+                    <div class="col-sm-12  col-md-3 col-md-push-9 ">
+                        <div class="resume-role"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-md-pull-3 ">
+                        <p>“A web designer , Front- end engineer and User Interface developer, over 3 years of working experiences. I am able to plan and have vast experiences of working on web development. Besides, focusing on standard-compliant HTML,CSS and JS to build the web application which works across the devices from mobile to desktop."</p>
+                    </div>
+                    <div class="container-resume2 row">
+                        <div class="col-md-3 col-sm-3 col-xs-12 ">
+                            <div class="container2-title col-md-12">
+                                <span><img src="images/Star.svg"></span>
+                                <h6>Skill</h6>
+                            </div>
+                            <div class="container2-content col-md-12">
+                                <div class="skillbrand ">
+                                    <span>Branding Design</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>UI/UX Design</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>Graphic Design</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>Html&Jade</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>Css/Scss/Sass</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>Javascript/Jquery/Ajax</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>Git</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                                <div class="skillbrand ">
+                                    <span>After Effect</span>
+                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12 ">
+                            <div class="container2-title col-md-12">
+                                <span><img src="images/Star.svg"></span>
+                                <h6>Work Experence</h6>
+                            </div>
+                            <div class="workexperence col-md-12">
+                                <h5>Web designer & Front-end engineer @ Taiwan monster village hotel.</h5>
+                                <span>JUNE  2014 - October  2017</span>
+                                <p>As a developer at Taiwan monster village hotel. I worked on project like monster village shopping website , monster village slot machine game website and more.Using MVC and technologies such as, Angular, Bootstrap,Ajax,JQuery, and Wordpress. Responsibility for room service booking server maintaining .</p>
+                            </div>
+                            <div class="workexperence col-md-12">
+                                <h5>Web designer @ Gameflier </h5>
+                                <span>March 2013 - June 2014</span>
+                                <p>Responsibility for online game website, including branding,designing,coding and maintaining,most works of created online game commercial website . Using animation and framework such as jQuery , Css3 and javascript and other jQuery plugin. I worked on projects like world2.gameflier.com , ro.gameflier.com , al.gameflier.com and more.</p>
+                            </div>
+                            <div class="workexperence col-md-12">
+                                <h5>UI designer @ Taiwan Nantou education commercial </h5>
+                                <span>January 2012 - March 2013</span>
+                                <p>As a developer at Taiwan monster village hotel. I worked on project like monster village shopping website , monster village slot machine game website and more.Using MVC and technologies such as, Angular, Bootstrap,Ajax,JQuery, and Wordpress. Responsibility for room service booking server maintaining .
+                                </p>
+                            </div>
+                            <div class="container2-title col-md-12">
+                                <span><img src="images/Star.svg"></span>
+                                <h6>Education</h6>
+                            </div>
+                            <div class="edcation col-md-12">
+                                <p>Department of Computer Simulation & design - bachelor’s Degree @ Shih Chien University September 2008 - September 2011</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- role -->
+                </div>
+            </div>
+            <div id="fox-img"></div>
+            <div class="paper-container2 container-fluid">
+            </div>
+        </div>
+        <!-- contect us -->
+        <div class="section" id="section3">
+            <div id="section3-container" class="container">
+                <div class="row">
+                    <div class="col-md-12 content-us">
+                        <form class="form-horizontal" id="contact_form" action="contact_post.php" method="post">
+                            <fieldset>
+                                <!-- Form Name -->
+                                <legend>Contact Us</legend>
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-1 control-label" for="name">Name</label>
+                                    <div class="col-md-5">
+                                        <input id="name" name="name" type="text" placeholder="Enter your full name here" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-1 control-label" for="email">Email</label>
+                                    <div class="col-md-5">
+                                        <input id="email" name="email" type="text" placeholder="Enter your email address here" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+                                <!-- Textarea -->
+                                <div class="form-group">
+                                    <label class="col-md-1 control-label" for="msg">Message</label>
+                                    <div class="col-md-4">
+                                        <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="submit"></label>
+                                    <div class="col-md-4">
+                                        <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                         <ul class="share-bar">
+                         <!-- Facebook -->
+                             <li><a class="share-bar1" href="https://www.facebook.com/libeenya" target="_blank"></a></li>
+                             <!-- Instagram -->
+                             <li><a class="share-bar2" href="https://www.instagram.com/brain00021/" target="_blank"></a></li>
+                             <!-- LinkedIn -->
+                             <li><a class="share-bar3" href="https://www.linkedin.com/in/bingyeli/" target="_blank"></a></li>
+                             <!-- Telegram -->
+                             <li><a class="share-bar4" href="mailto:brain00021@gmail.com.tw"></a></li>
+                             <!-- Tumblr -->
+                             <li><a class="share-bar5" href="https://www.tumblr.com/blog/brain00021" target="_blank"></a></li>
+                         </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="paper-container3 container-fluid"></div>
+        </div>
+    </div>
+    <div id="footer">test1</div>
+    <!-- my js -->
+    <script type="text/javascript" src="lib/js/firefly.js"></script>
+    <!-- my js -->
+    <script type="text/javascript" src="js/custmom.js"></script>
+</body>
+
+</html>

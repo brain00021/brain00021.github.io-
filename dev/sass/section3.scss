@@ -1,0 +1,29 @@
+#section2{
+	.paper-container2{
+		@include size(100%,250px);
+		background-color: #D0B1AF;
+		background: url(../images/bg3.jpg) repeat top center;
+		position: relative;
+		// bottom:50px;
+		-webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		&:after{
+			content: '';
+			@include size(100%,100%);
+			position: relative;
+			background-color: #D0B1AF;
+		background: url(../images/bg3.jpg) repeat top center;
+		}
+	}
+}
+#section3{
+	background: url(../images/bg3.jpg) repeat top left;
+}
+.paper-container3{
+	@include size(50%,100%);
+	position: absolute;
+	top:0;
+	right:0;
+	background: url(../images/bg3-bg.jpg) no-repeat center right;
+	background-size:100%;
+}
