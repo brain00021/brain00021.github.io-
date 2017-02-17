@@ -18,7 +18,7 @@
 	bottom:100px;
 	z-index: 99;
 	transition:all 0.9s ease-out;
-	animation:planet 5s infinite;
+	animation:planet 15s infinite;
 	img{width:100%;}
 	.imgsContainer{
 		position: relative;
@@ -36,7 +36,7 @@
 	}
 	#staticImg.moveUp{
 		width:20%;
-          transform: translate3d(10% , 0, 100%);
+          transform: translate3d(10% , 10px, 100%);
 	}
 	#staticImg.active{
 		top: 50%;
@@ -44,7 +44,7 @@
 
 @keyframes planet{
 	0%{bottom:100px;}
-	50%{bottom:0px;}
+	50%{bottom:50px;}
 	100%{bottom:100px;}
 }
 
