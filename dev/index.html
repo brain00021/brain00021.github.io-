@@ -58,6 +58,15 @@
         </div>
     </ul>
     <div id="fullpage">
+        <!-- moviing -->
+        <div id="staticImg">
+            <div class="imgsContainer">
+                <img src="images/prince-one.png" alt="plant.png" id="plant" />
+            </div>
+            <div class="imgsContainer2">
+                <img src="images/plant.png" alt="plant.png" id="plant" />
+            </div>
+        </div>
         <!-- index-fullview -->
         <div class="section active" id="section0">
             <h1>Brian’s B612 Planet</h1>
@@ -78,21 +87,22 @@
                 </div>
                 <div class="row profile-collect">
                     <div class="col-xs-12 col-sm-4 col-md-4 ">
-                        <a href="#" class="profile-nav">
-                            <h6 class="profile-title">Monster Village-Letto Game</h6>
-                            <div class="profile-work"></div>
+                        <a href="https://medium.com/@brianli_42376/%E5%A6%96%E6%80%AA%E6%9D%91%E5%A4%A7%E6%A8%82%E9%80%8F-%E8%A3%BD%E4%BD%9C%E6%B5%81%E7%A8%8B-107b3400c3f8#.7usztpm6c" target="_blank" class="profile-nav">
+                            <h6 class="profile-title">Monster Village-Lettory Game</h6>
+                            <div class="profile-work" id="profile-work1"></div>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-4  col-md-4">
-                        <a href="#" class="profile-nav">
+                        <a href="https://medium.com/@brianli_42376/%E6%89%80%E4%BB%A5%E6%88%91%E5%80%91%E5%8F%88%E9%96%8B%E5%A7%8B%E8%A8%88%E5%8A%83%E5%8F%A6%E5%A4%96%E4%B8%80%E5%80%8B%E8%B3%AD%E5%8D%9A%E9%81%8A%E6%88%B2%E4%BE%86%E9%81%8A%E6%A8%82%E4%BA%86-429f270d22c4#.ppq0j7jg2" target="_blank" class="profile-nav">
                             <h6 class="profile-title">Monster Village - Slot machine</h6>
-                            <div class="profile-work"></div>
+                            <div class="profile-work" id="profile-work2"></div>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-4  col-md-4 ">
                         <a href="#" class="profile-nav">
-                            <h6 class="profile-title">Monster Village - E-commerence</h6>
-                            <div class="profile-work"></div>
+                            <h6 class="profile-title">Monster Village -  
+                            E-commerence</h6>
+                            <div class="profile-work" id="profile-work3"></div>
                         </a>
                     </div>
                 </div>
@@ -122,35 +132,35 @@
                             <div class="container2-content col-md-12">
                                 <div class="skillbrand ">
                                     <span>Branding Design</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:80%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>UI/UX Design</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:80%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>Graphic Design</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:80%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>Html&Jade</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:50%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>Css/Scss/Sass</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:70%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>Javascript/Jquery/Ajax</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:40%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>Git</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:20%;"></span></div>
                                 </div>
                                 <div class="skillbrand ">
                                     <span>After Effect</span>
-                                    <div class="bar"><span class="bar-scroll"></span></div>
+                                    <div class="bar"><span class="bar-scroll" style="width:20%;"></span></div>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +209,10 @@
                         <form class="form-horizontal" id="contact_form" action="contact_post.php" method="post">
                             <fieldset>
                                 <!-- Form Name -->
-                                <legend>Contact Us</legend>
+                                <div class="container-title">
+                                    <span></span>
+                                    <h4>Content Us</h4>
+                                </div>
                                 <!-- Text input-->
                                 <div class="form-group">
                                     <label class="col-md-1 control-label" for="name">Name</label>
@@ -217,34 +230,44 @@
                                 <!-- Textarea -->
                                 <div class="form-group">
                                     <label class="col-md-1 control-label" for="msg">Message</label>
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                         <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <!-- Button -->
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="submit"></label>
-                                    <div class="col-md-4">
+                                    <label class="col-md-4 control-label" for="submit">
+                                        <ul class="share-bar">
+                                            <!-- Facebook -->
+                                            <li>
+                                                <a class="share-bar1" href="https://www.facebook.com/libeenya" target="_blank"></a>
+                                            </li>
+                                            <!-- Instagram -->
+                                            <li>
+                                                <a class="share-bar2" href="https://www.instagram.com/brain00021/" target="_blank"></a>
+                                            </li>
+                                            <!-- LinkedIn -->
+                                            <li>
+                                                <a class="share-bar3" href="https://www.linkedin.com/in/bingyeli/" target="_blank"></a>
+                                            </li>
+                                            <!-- Telegram -->
+                                            <li>
+                                                <a class="share-bar4" href="mailto:brain00021@gmail.com.tw"></a>
+                                            </li>
+                                            <!-- Tumblr -->
+                                            <li>
+                                                <a class="share-bar5" href="https://www.tumblr.com/blog/brain00021" target="_blank"></a>
+                                            </li>
+                                        </ul>
+                                    </label>
+                                    <div class="col-md-2 sumbmitcontral">
                                         <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
                                     </div>
                                 </div>
                             </fieldset>
                         </form>
-                         <ul class="share-bar">
-                         <!-- Facebook -->
-                             <li><a class="share-bar1" href="https://www.facebook.com/libeenya" target="_blank"></a></li>
-                             <!-- Instagram -->
-                             <li><a class="share-bar2" href="https://www.instagram.com/brain00021/" target="_blank"></a></li>
-                             <!-- LinkedIn -->
-                             <li><a class="share-bar3" href="https://www.linkedin.com/in/bingyeli/" target="_blank"></a></li>
-                             <!-- Telegram -->
-                             <li><a class="share-bar4" href="mailto:brain00021@gmail.com.tw"></a></li>
-                             <!-- Tumblr -->
-                             <li><a class="share-bar5" href="https://www.tumblr.com/blog/brain00021" target="_blank"></a></li>
-                         </ul>
                     </div>
                 </div>
-
             </div>
             <div class="paper-container3 container-fluid"></div>
         </div>

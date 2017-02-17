@@ -32,7 +32,7 @@ $bar-color:#053948;
 		text-align: left;
 		span{font-size: 1.2rem; letter-spacing: 0.2rem;}
 		.bar{ @include size(100%,20px);border: 2px solid $bar-color;position: relative;margin-top:5px;}
-		.bar-scroll{display: block;background:$bar-color; @include size(100%,100%);position: absolute; top:0;left:0;}
+		.bar-scroll{display: block;background:$bar-color; @include size(0%,100%);position: absolute; top:0;left:0;}
 	}
 }
 // workexperence
@@ -73,7 +73,7 @@ $bar-color:#053948;
 }
 @media screen and (max-width:$sm) {
 	#section2-container{
-	padding:60px 20px 150px 50px;
+	padding:60px 10px 170px 10px;
 	overflow: visible;
 }
 	.container-resume2{

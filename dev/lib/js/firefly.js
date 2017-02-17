@@ -21,7 +21,7 @@
 		window.addEventListener('resize', setDimensions);
 
 		function Circle() {
-			this.settings = {ttl:4500, xmax:10, ymax:5, rmax:10, rt:1, xdef:960, ydef:540, xdrift:4, ydrift: 4, random:true, blink:true};
+			this.settings = {ttl:1500, xmax:10, ymax:5, rmax:10, rt:1, xdef:960, ydef:540, xdrift:4, ydrift: 4, random:true, blink:true};
 
 			this.reset = function() {
 				this.x = (this.settings.random ? WIDTH*Math.random() : this.settings.xdef);
