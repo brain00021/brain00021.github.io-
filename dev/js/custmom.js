@@ -33,7 +33,8 @@ $(funciton(){
     for (i in arrUrl_webgolds) {
         if (arrUrl_webgolds[i] == urlPath) {
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { //使用javascript回傳使用者瀏覽裝置的版本
-                $('#pixie,#staticImg').remove();
+                $('#pixie').remove();
+                $('#staticImg,.imgsContainer').remove();
             } else {}
         }
     }
