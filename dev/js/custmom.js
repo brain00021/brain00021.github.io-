@@ -22,10 +22,9 @@ $(document).ready(function() {
             $('#staticImg').toggleClass('moveUp', index == 2 && direction == 'up');
         }
     });
-});
 
-$(funciton(){
-        var urlPath = 'index';
+
+    var urlPath = 'index';
     var urlHref = location.href;
 
     // 如果是手機端訪問首頁， 跳至行動手機版網頁
@@ -33,9 +32,10 @@ $(funciton(){
     for (i in arrUrl_webgolds) {
         if (arrUrl_webgolds[i] == urlPath) {
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { //使用javascript回傳使用者瀏覽裝置的版本
-                $('#pixie').remove();
-                $('#staticImg,.imgsContainer').remove();
+                $('#pixie,#staticImg').remove();
             } else {}
         }
     }
+
+
 });
