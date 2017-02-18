@@ -45,8 +45,6 @@ for(i in arrUrl_webgolds) {
         urlHref='/moblie'; //直接轉到行動版首頁
       }
       window.location.assign(urlHref+"mobile.html"); //轉址
-      alert(urlHref);
-      alert(urlPath);
       break;
     }
     else
@@ -54,7 +52,6 @@ for(i in arrUrl_webgolds) {
     if(location.pathname === '/') {
         urlHref='/index'; //直接轉到行動版首頁
       }
-    alert(urlHref);
     window.location.assign(urlHref+"desktop.html");
     }
   }
