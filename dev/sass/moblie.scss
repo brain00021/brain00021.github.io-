@@ -1,0 +1,86 @@
+// header
+@import "brain_plugin";
+#fullpage {
+    overflow: hidden;
+}
+
+#menu {
+    z-index: 99;
+}
+
+#section0 {
+    overflow-x: hidden;
+    @include size(100%, 800px);
+    #staticImg {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 200px;
+        display: block;
+        padding: 10px;
+        z-index: 80;
+        // top:0px;
+        // height: 100px;
+        margin: 150px auto 20px auto;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+}
+
+#section1 {
+    overflow: visible;
+    padding: 50px 15px 150px 15px;
+}
+
+// resume
+#section2 {
+    background: #f2f2f2 repeat top left;
+}
+
+.box-center {
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+}
+#section3{
+	padding-bottom: 150px;
+}
+
+@media screen and (max-width:$sm) {
+
+	.container-title h4{
+		font-size:30pt;
+	}
+    #section0 {
+        max-height: 700px;
+        h1 {
+            margin-top: 15px;
+            line-height: 35pt;
+            font-size: 30pt;
+        }
+    }
+    // resume
+    #section1 {
+        overflow: visible;
+        padding: 0px 15px 0px 15px;
+        #section1-container{
+    	padding-bottom: 0;
+    }
+        .profile-collect{
+        	margin-bottom:10px;
+        }
+    }
+    
+    #section2 {
+        #section2-container {
+            padding: 60px 20px 0px 20px;
+            .resume-role{
+            	margin-top: -20px;
+            }
+        }
+    }
+    #fox-img{
+    	bottom:50px;
+    }
+}
