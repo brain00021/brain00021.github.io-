@@ -113,7 +113,7 @@
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-4  col-md-4 ">
-                        <a href="https://medium.com/@brianli_42376/monster-village-e-commerce-project-8fdb6379d150#.mc8rhivdp" target="_blank" class="profile-nav">
+                        <a href="#" class="profile-nav">
                             <h6 class="profile-title">Monster Village -  
                             E-commerence</h6>
                             <div class="profile-work" id="profile-work3"></div>
@@ -292,6 +292,18 @@
         </div>
     </div>
     <!-- my js -->
+    <script>
+        $(function () {
+           $('a[href*=#]:not([href=#])').click(function() {
+               var target = $(this.hash);
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+               }, 1000);
+               return false;
+           });
+ 
+       });
+    </script>
     <!-- my js -->
     <script type="text/javascript" src="js/custmom.js"></script>
 </body>
