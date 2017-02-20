@@ -40,4 +40,8 @@ table {background-color: yellow;}
 mail("brain00021@gmail.com,cfwei.tw@gmail.com",$subject,$mailbody,$sHeaders); 
 
 ?>
-<h1>Message Sent!</h1>
+<h1>Message Sent! return back to Website</h1>
+<script>
+	var urlHref = location.href;
+	window.location.assign("http://brian-li.com/resume/index.php");
+</script>

@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="lib/css/examples.css" />
     <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="lib/css/animsition.min.css">
     <!-- my css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/moblie.css">
@@ -36,9 +37,11 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="lib/js/scrolloverflow.js"></script>
     <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="lib/js/animsition.min.js"></script>
 </head>
 
 <body>
+    <div class="animsition">
     <!-- menu -->
     <ul id="menu" class="menu-position container-fulid">
         <div class="row">
@@ -68,7 +71,7 @@
             </li>
         </div>
     </ul>
-    <div id="fullpage">
+    <div id="fullpage" class="animation">
         <!-- index-fullview -->
         <div class="section active" id="section0">
         <a id="topfullview"></a>
@@ -113,7 +116,7 @@
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-4  col-md-4 ">
-                        <a href="#" class="profile-nav">
+                        <a href="https://medium.com/@brianli_42376/monster-village-e-commerce-project-8fdb6379d150#.mc8rhivdp" target="_blank" class="profile-nav">
                             <h6 class="profile-title">Monster Village -  
                             E-commerence</h6>
                             <div class="profile-work" id="profile-work3"></div>
@@ -291,6 +294,7 @@
             <div class="paper-container3 container-fluid"></div>
         </div>
     </div>
+    </div>
     <!-- my js -->
     <script>
         $(function () {
@@ -303,6 +307,30 @@
            });
  
        });
+        $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+}); 
     </script>
     <!-- my js -->
     <script type="text/javascript" src="js/custmom.js"></script>
