@@ -31,18 +31,13 @@
     <!-- my css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <!-- plugin js -->
-    <script src="lib/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="lib/js/scrolloverflow.js"></script>
-    <script type="text/javascript" src="lib/js/jquery.fullPage.js"></script>
-    <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script type="text/javascript" src="lib/js/typewriter.js"></script>
-    <script type="text/javascript" src="lib/js/animsition.min.js"></script>
+    
 </head>
 
 <body >
-    <div class="animsition">
+    
     <!-- menu -->
     <ul id="menu" class="menu-position container-fulid">
         <div class="row">
@@ -72,14 +67,11 @@
             </li>
         </div>
     </ul>
-    <div id="fullpage" >
+    <div id="fullpage" class="animsition">
         <!-- moviing -->
         <div id="staticImg">
             <div class="imgsContainer">
-                <img src="images/prince-one.png" alt="plant.png" id="plant" />
-            </div>
-            <div class="imgsContainer2">
-                <img src="images/plant.png" alt="plant.png" id="plant" />
+                <img src="images/fox-icon.svg" alt="plantfox.png" id="plant" />
             </div>
         </div>
         <!-- index-fullview -->
@@ -122,6 +114,7 @@
                     </div>
                 </div>
             </div>
+            <div class="moautain-icon"></div>
             <div class="paper-container container-fluid"></div>
         </div>
         <!-- profile -->
@@ -290,13 +283,20 @@
             <div class="paper-container3 container-fluid"></div>
         </div>
     </div>
-    </div>
+    <script src="lib/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="lib/js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.fullPage.js"></script>
+    <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script type="text/javascript" src="lib/js/typewriter.js"></script>
+    <script type="text/javascript" src="lib/js/animsition.min.js"></script>
     <!-- my js -->
     <script type="text/javascript" src="lib/js/firefly.js"></script>
     <!-- my js -->
     <script type="text/javascript" src="js/custmom.js"></script>
     <script>
     $(document).ready(function() {
+        // loading
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
@@ -319,6 +319,16 @@
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
+
+  // moving mouse
+   $('#section1').mousemove(function(e){
+            var y = e.pageY;
+            var x = e.pageX;
+            var xmove = Math.round(x*0.05);
+            var $moautainIcon = $('.moautain-icon');                  
+            // $('div.moveAble').css({'top': y});
+            $moautainIcon.css({'right':xmove*-1});           
+      });
 }); 
     </script>
 

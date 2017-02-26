@@ -1,8 +1,11 @@
+body{
+	background: #000;
+}
 #section0{
 	background:#000 url(../images/bg.jpg)no-repeat top center;	
 }
 #section1{
-	background:#fff url(../images/bg2.jpg)no-repeat top center;
+	background:#fff url(../images/resume-bg.jpg)no-repeat top center;
 	background-size:cover;
 }
 #section3{
@@ -12,17 +15,18 @@
 
 // planet moving
 #staticImg{
-	@include size(15%,233px);
+	@include size(100%,233px);
 	position: absolute;
-	right:20px;
+	max-width:500px;
+	left:20px;
 	bottom:100px;
-	z-index: 99;
+	z-index: 30;
 	transition:all 0.9s ease-out;
 	animation:planet 15s infinite;
 	img{width:100%;}
 	.imgsContainer{
 		position: relative;
-		z-index: 80;
+		z-index: 50;
 
 	}
 	.imgsContainer2{
@@ -32,11 +36,11 @@
 }
 
 	#staticImg.moveDown{
-          transform: translate3d(0, 400%, 0);
+          transform: translate3d(230%, 150%, 0);
 	}
 	#staticImg.moveUp{
-		width:20%;
-          transform: translate3d(10% , 10px, 100%);
+		width:100%;
+          transform: translate3d(10% , 10%, 120%);
 	}
 	#staticImg.active{
 		top: 50%;

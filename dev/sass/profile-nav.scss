@@ -1,12 +1,21 @@
 // profile-basic
 #seciton1 {}
 
+// decration
 .paper-container {
     background: url(../images/paper-edge-top.png) left top;
     @include size(100%, 40px);
     position: absolute;
     bottom: 0;
     left: 0;
+}
+.moautain-icon{
+    background: url(../images/moutain.png) no-repeat top left;
+    @include size(100%,229px);
+    max-width:800px;
+    position: absolute;
+    bottom: 10px;
+    right:0;
 }
 
 .profile-nav-bg {
@@ -16,13 +25,13 @@
 .profile-collect {
     margin-top: 10px;
     position: relative;
+    z-index: 50;
 }
 
 .profile-work {
     position: absolute;
     display: block;
     top: 0;
-    background: url('http://wegraphics.net/wp-content/uploads/2010/08/layered_watercolor_splatters_preview2.jpg') no-repeat top center;
     background-size: cover;
     @include size(100%,
     100%);
