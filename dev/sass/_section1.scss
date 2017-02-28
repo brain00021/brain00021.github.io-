@@ -5,6 +5,12 @@ $banner-color:#fff;
     h1 {
         font-size: 7.5rem;
         color: $banner-color;
+        // background: rgba(#000,.8);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 50;
+        max-width:900px;
+        margin:auto;
         animation: colorchange1 15s infinite;
     }
     h5 {

@@ -15,14 +15,17 @@ body{
 
 // planet moving
 #staticImg{
-	@include size(100%,233px);
+	@include size(100%,auto);
 	position: absolute;
-	max-width:500px;
-	left:20px;
-	bottom:100px;
-	z-index: 30;
+	max-width:800px;
+	left:0;
+	right:0;
+	top:2%;
+	margin:auto;
+	z-index: 28;
 	transition:all 0.9s ease-out;
 	animation:planet 15s infinite;
+	opacity: 0.2;
 	img{width:100%;}
 	.imgsContainer{
 		position: relative;
@@ -36,11 +39,14 @@ body{
 }
 
 	#staticImg.moveDown{
-          transform: translate3d(230%, 150%, 0);
+		  width:30%;
+          transform: translate3d(120%, 28%, 0);
+          opacity: 1;
 	}
 	#staticImg.moveUp{
 		width:100%;
-          transform: translate3d(10% , 10%, 120%);
+          transform: translate3d(0% , 15%, 120%);
+
 	}
 	#staticImg.active{
 		top: 50%;
@@ -55,11 +61,12 @@ body{
 @media screen and (max-width:$sm) {
 #fp-nav{display: none;}
 #staticImg.moveDown{
-          transform: translate3d(50px, 400%, 0);
-          opacity: 0;
+	z-index: 5;
+          transform: translate3d(120%, 28%, 0);
+          // opacity: 0;
 	}
 #staticImg.moveUp{
 	bottom:0px;
-    transform: translate3d(10px , 0, 100%);
+    transform: translate3d(10px , 10%, 100%);
 	}
 }
