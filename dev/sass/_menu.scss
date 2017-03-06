@@ -1,40 +1,61 @@
-#menu{
-	background: rgba(#000,0.5);
-	@include size(100%,auto);
-	text-align: center;
-	z-index:90;
-	margin:auto;
-	.row{
-		max-width:988px;
-		margin: 0 auto;
-		a{
-			font-size: 1.2rem;
-			color:#fff;
-			display:block; 
-			text-decoration: none;
-			line-height: 1.8rem;
-			padding-top:10px;
-			transition:all ease-in-out 0.4s ;
-			text-align: center;
-			vertical-align: middle;
-			span{display: inline-block;vertical-align: top;}
-			p{font-size: 1.2rem;display: inline-block; vertical-align: middle; line-height: 1.5rem;}
-			&:hover{
-				background-color:#50E3C2;
-				color:#000;
-				line-height: 1.5rem;
-				margin-top: -5px;
-			}
-		}
-	}
+$menu-color:#50E3c2;
+#menu {
+    background: rgba(#000, 0.5);
+    @include size(100%, auto);
+    text-align: center;
+    z-index: 90;
+    margin: auto;
+    .row {
+        max-width: 988px;
+        margin: 0 auto;
+        a {
+            font-size: 1.2rem;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            line-height: 1.8rem;
+            padding-top: 10px;
+            transition: all ease-in-out 0.4s;
+            text-align: center;
+            vertical-align: middle;
+            span {
+                display: inline-block;
+                vertical-align: top;
+            }
+            p {
+                font-size: 1.2rem;
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 1.5rem;
+            }
+            &:hover {
+                background-color: $menu-color;
+                color: #000;
+                line-height: 1.5rem;
+                margin-top: -5px;
+            }
+        }
+        .meun-hover {
+            background-color: $menu-color;
+            color: #000;
+            line-height: 1.5rem;
+            margin-top: -5px;
+        }
+    }
 }
-.menu-position{
-	position: fixed;
-	top:0;
+
+.menu-position {
+    position: fixed;
+    top: 0;
 }
+
 @media screen and (min-width:$md) {
-	a{color:#fff;
-	  font-size: 1.2rem;
-	  font-weight: 800;
-		span{display: block;}}
+    a {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 800;
+        span {
+            display: block;
+        }
+    }
 }

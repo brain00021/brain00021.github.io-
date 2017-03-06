@@ -81,15 +81,16 @@
         transition: all 0.5s ease 0.2s;
     }
     .profile-title {
-        color: #fff;
-        opacity: 0;
+        opacity: 1;
+        color:#fff;
+        background:rgba(#000,0.5);
         font-size: 15pt;
         text-decoration: none;
         text-align: center;
-        line-height: 15pt;
+        vertical-align: bottom;
+        line-height: 30pt;
         position: relative;
         z-index: 50;
-        top: 0;
         transition: all 0.4s ease;
     }
     //hover nav

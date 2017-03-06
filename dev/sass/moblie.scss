@@ -2,6 +2,21 @@
 @import "brain_plugin";
 #fullpage {
     overflow: hidden;
+    #section0 {
+        background: #000 url(../images/bg-s.jpg)repeat-x top center;
+        background-size: cover;
+    }
+    #section1 {
+        background: #000 url(../images/resume-bg-s.jpg)no-repeat top center;
+        // background-size: contain;
+    }
+    #section3 {
+        background: url(../images/bg3.jpg) repeat top left;
+    }
+    .moautain-icon {
+        background: url(../images/moutain-s.png) no-repeat bottom right;
+        background-size: 100%;
+    }
 }
 
 #menu {
@@ -11,39 +26,43 @@
 #section0 {
     position: relative;
     @include size(100%, auto);
+    .box-center {
+        position: relative;
+        overflow: hidden;
+        padding-top: 200px;
+    }
     #staticImg {
         position: relative;
-        margin: auto;
         width: 100%;
-        max-width: 800px;
+        max-width: 600px;
+        margin: auto;
         display: block;
         padding: 10px;
         z-index: 80;
         // top:0px;
         // height: 100px;
-        margin: 200px auto -220px auto;
+        margin: 0px auto -100px auto;
     }
     h1 {
         margin-top: 20px;
     }
-    .mouse-wheel{
+    .mouse-wheel {
         position: relative;
         margin-top: 50px;
+        margin: 50px auto 0 auto;
         // width:20%;
     }
 }
 
-
-.moautain-icon{
-    background: url(../images/moutain.png) no-repeat bottom left;
-    @include size(100%,229px);
-    max-width:500px;
+.moautain-icon {
+    background: url(../images/moutain-s.png) no-repeat bottom left;
+    @include size(100%, 229px);
+    max-width: 500px;
     position: absolute;
     bottom: 10px;
-    right:0;
+    right: 0;
     background-size: 100%;
 }
-
 
 #section1 {
     overflow: visible;
@@ -55,22 +74,21 @@
     background: #f2f2f2 repeat top left;
 }
 
-.box-center {
-    display: inline-block;
-    text-align: center;
-    vertical-align: center;
-}
-#section3{
-	padding-bottom: 150px;
+#section3 {
+    padding-bottom: 150px;
 }
 
 @media screen and (max-width:$sm) {
-
-	.container-title h4{
-		font-size:30pt;
-	}
+    .moreprofile{
+        top:-150px;
+    }
+    .container-title h4 {
+        font-size: 20pt;
+        line-height: 20pt;
+    }
     #section0 {
         max-height: 700px;
+        background-size: 100%;
         h1 {
             margin-top: 15px;
             line-height: 35pt;
@@ -81,23 +99,22 @@
     #section1 {
         overflow: visible;
         padding: 0px 15px 0px 15px;
-        #section1-container{
-    	padding-bottom: 0;
-    }
-        .profile-collect{
-        	margin-bottom:10px;
+        #section1-container {
+            padding-bottom: 0;
+        }
+        .profile-collect {
+            margin-bottom: 10px;
         }
     }
-    
     #section2 {
         #section2-container {
             padding: 60px 20px 0px 20px;
-            .resume-role{
-            	margin-top: -20px;
+            .resume-role {
+                margin-top: -20px;
             }
         }
     }
-    #fox-img{
-    	bottom:50px;
+    #fox-img {
+        bottom: 50px;
     }
 }

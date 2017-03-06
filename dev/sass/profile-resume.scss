@@ -53,15 +53,37 @@ $bar-color:#053948;
 }
 // fox -image
 #fox-img{
-	@include size(217px,185px);
+	@include size(400px,390px);
 	background: url(../images/fox.png) no-repeat center center;
 	position: absolute;
 	bottom:150px;
 	z-index: 50;
 	left:10px;
+	background-size:100%;
 }
+.moreprofile{
+	@include size(200px,50px);
+	display: block;
+	border: 1px solid $bar-color;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	margin: 20px auto;
+	font-size: 15pt;
+	letter-spacing: 5pt;
+	transition:all 0.5s ease;
+	z-index: 80;
 
+	&:hover{
+		background:$menu-color;
+		text-decoration: none;
+		color:#000;
+	}
+}
 @media screen and (max-width:$md) {
+	#fox-img{		
+	@include size(217px,185px);		
+	}
 	.container-resume{
 		text-align: center;
 	}

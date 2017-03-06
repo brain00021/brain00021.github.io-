@@ -71,13 +71,15 @@
         <div id="fullpage">
             <!-- moviing -->
             <div id="staticImg" class="staticImgicon">
-                <div class="imgsContainer">
-                    <img src="images/fox-icon.svg" alt="plantfox.png" id="plant" />
+                <div class="imgsContainer row">
+                    <div class="col-md-12">
+                        <img src="images/fox-icon.svg" alt="plantfox.png" id="plant" />
+                    </div>
                 </div>
             </div>
             <!-- index-fullview -->
             <div class="section active" id="section0">
-                <h1 class="subtitle">BRIAN’S B612 PLANET</h1>
+                <h1 class="subtitle">BRIAN’S B612 </br>PLANET</h1>
                 <h5 class="time">Website designer & Coder</h5>
                 <h5 class="time">2013-2017</h5>
                 <div class="mouse-wheel">
@@ -114,6 +116,7 @@
                             </a>
                         </div>
                     </div>
+                    <a href="http://brian-li.com/web_design.html" target='blank' class="moreprofile">MORE</a>
                 </div>
                 <div class="moautain-icon"></div>
                 <div class="paper-container container-fluid"></div>
@@ -296,7 +299,39 @@
     <script type="text/javascript" src="js/custmom.js"></script>
     <script type='text/javascript' src='js/custmom2.js'></script>
     <script>
-    
+    $('#fullpage').fullpage({
+        'verticalCentered': true,
+        'css3': true,
+        'navigation': true,
+        'navigationPosition': 'left',
+        'navigationTooltips': ['topfullview', 'recent-project', 'profile', 'contect-me'],
+        anchors: ['topfullview', 'recent-project', 'profile', 'contect-me'],
+        scrollOverflow: true,
+        sectionsColor: ['#000000', '#ffffff', 'whitesmoke', '#D0B1AF'],
+        'onLeave': function(index, nextIndex, direction) {
+            if (index == 1 && direction == 'down') {
+                $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
+                console.log(index, "移除");
+            } else if (index == 2 && direction == 'up') {
+                $('.section').eq(index - 2).removeClass('moveUp').addClass('moveDown');
+                console.log(direction, "移除2");
+            }
+
+            $('#staticImg').toggleClass('active', (index == 1 && direction == 'down') || (index == 2 && direction == 'up'));
+            $('#staticImg').toggleClass('moveDown', nextIndex == 2);
+            $('#staticImg').toggleClass('moveUp', index == 2 && direction == 'up');
+            if (nextIndex == 2) {
+                $('#menu li').eq(1).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+            } else if (nextIndex == 3) {
+                $('#menu li').eq(2).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+
+            } else if (nextIndex == 4) {
+                $('#menu li').eq(3).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+            } else {
+                 $('#menu li').eq(0).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+            }
+        }
+    });
     </script>
 </body>
 

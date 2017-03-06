@@ -65,7 +65,11 @@
                 opacity: 0,
                 y: -100,
                 ease: Power2.ease
-            }, 0.5);
+            }).staggerFrom(".time", 0.8, {
+                opacity: 0,
+                y: -100,
+                ease: Power2.ease
+            });
         }
 
     });
