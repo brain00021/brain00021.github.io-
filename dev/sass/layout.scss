@@ -18,15 +18,15 @@ body{
 	@include size(100%,auto);
 	position: absolute;
 	max-width:800px;
-	left:0;
+	left:0px;
 	right:0;
 	top:2%;
 	margin:auto;
 	z-index: 28;
 	transition:all 0.9s ease-out;
 	animation:planet 15s infinite;
-	opacity: 0.2;
-	img{width:100%;}
+	opacity: 0.8;
+	img{width:100%;margin-left: 100px;}
 	.imgsContainer{
 		position: relative;
 		z-index: 50;
@@ -42,6 +42,7 @@ body{
 		  width:30%;
           transform: translate3d(120%, 28%, 0);
           opacity: 1;
+          img{margin-left: 0;}
 	}
 	#staticImg.moveUp{
 		width:100%;

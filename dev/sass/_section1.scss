@@ -3,22 +3,46 @@ $banner-color:#fff;
     text-align: center;
     color: $banner-color;
     h1 {
-        font-size: 7.5rem;
+        font-size: 15rem;
         color: $banner-color;
         // background: rgba(#000,.8);
         border-radius: 5px;
         padding: 10px;
         z-index: 50;
         max-width:900px;
-        margin:auto;
+        text-align: left;
+        float: left;
+        top:50px;
+        left: 15px;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Vollkorn', serif;
         animation: colorchange1 15s infinite;
+
     }
     h5 {
         font-size: 2.5rem;
+        text-align: right;
+        @include pie-clearfix;
+        margin-top: -100px;
         span {
             border-right: .05em solid;
             animation: caret 1s steps(1) infinite;
         }
+    }
+    .time{font-size:2.5rem;float:right; clear: both; margin-right:15px; }
+    .subtitle-atricle{
+        text-align:right;
+        display: block;
+        width:400px;
+        position: relative;
+        float: right;
+        clear: both;
+        padding:0 15px;
+        margin-top: 20px;
+        bottom: 20px;
+        font-size: 12pt;
+        margin-right: 0;
+        @include pie-clearfix;
     }
     .mouse-wheel {
         display: inline-block;
@@ -49,10 +73,29 @@ $banner-color:#fff;
     #section0 {
         h1 {
             font-size: 4.5rem;
+            float: none;
+            text-align: center;
+            top:10px;
         }
         h5 {
             font-size: 1.5rem;
+            float: none;
+            margin: 10px;
+            margin-top: 10px;
         }
+        .time{float:none;text-align: center;}
+        .subtitle-atricle{
+            text-align: center;
+            float: none;
+            margin: auto;
+            padding-top: 25px;
+        }
+
+
+    }
+    #staticImg{
+        opacity: 0.2;
+        img{margin-left:0;}
     }
     #menu .row a{
     	span{display: block;}
@@ -72,26 +115,8 @@ $dark:#000;
         color: $banner-color;
     }
     50% {
-        color: $banner-color;
-    }
-    52% {
-        color: $dark;
-    }
-    54% {
-        color: $banner-color;
-    }
-    56% {
-        color: $dark;
-    }
-    58% {
-        color: $banner-color;
-    }
-    60% {
-        color: $dark;
-    }
-    62% {
-        color: $banner-color;
-    }
+        color: $menu-color;
+}
     100% {
         color: $banner-color;
     }
