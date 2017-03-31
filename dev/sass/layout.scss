@@ -2,7 +2,7 @@ body{
 	background: #000;
 }
 #section0{
-	background:#000 url(../images/bg.jpg)no-repeat top center;	
+	background:#000 url(../images/bg.jpg) repeat-x top center;	
 }
 #section1{
 	background:#fff url(../images/resume-bg.jpg)no-repeat top center;
@@ -17,16 +17,16 @@ body{
 #staticImg{
 	@include size(100%,auto);
 	position: absolute;
-	max-width:800px;
+	max-width:700px;
 	left:0px;
 	right:0;
-	top:2%;
+	top:3%;
 	margin:auto;
 	z-index: 28;
 	transition:all 0.9s ease-out;
 	animation:planet 15s infinite;
 	opacity: 0.8;
-	img{width:100%;margin-left: 100px;}
+	img{width:100%;margin-left: 200px;}
 	.imgsContainer{
 		position: relative;
 		z-index: 50;
@@ -58,7 +58,12 @@ body{
 	50%{bottom:50px;}
 	100%{bottom:100px;}
 }
+@media screen and (max-width:$md){
+	#staticImg{
+		max-width: 500px;
 
+	}
+}
 @media screen and (max-width:$sm) {
 #fp-nav{display: none;}
 #staticImg.moveDown{

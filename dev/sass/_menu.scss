@@ -5,6 +5,8 @@ $menu-color:#50E3c2;
     text-align: center;
     z-index: 90;
     margin: auto;
+    transition:all 1s ease;
+
     .row {
         max-width: 988px;
         margin: 0 auto;
@@ -48,6 +50,13 @@ $menu-color:#50E3c2;
     position: fixed;
     top: 0;
 }
+
+    .menu-fixed{
+     top: -20%;
+    }
+    .menu-down{
+    top: 0;
+    }
 
 @media screen and (min-width:$md) {
     a {

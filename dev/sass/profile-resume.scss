@@ -64,7 +64,8 @@ $bar-color:#053948;
 .moreprofile{
 	@include size(200px,50px);
 	display: block;
-	border: 1px solid $bar-color;
+	// border: 1px solid $bar-color;
+	background: $menu-color;
 	color:#fff;
 	text-align: center;
 	line-height: 50px;
@@ -73,6 +74,7 @@ $bar-color:#053948;
 	letter-spacing: 5pt;
 	transition:all 0.5s ease;
 	z-index: 80;
+	border-radius: 25px;
 
 	&:hover{
 		background:$menu-color;

@@ -25,12 +25,16 @@
         });
 
         // moving mouse
-        $('#fullpage').mousemove(function(e) {
+        $(window).mousemove(function(e) {
             var y = e.pageY;
             var x = e.pageX;
             var xmove = Math.round(x * 0.05);
+            // var ymove = Math.round(y);
+            // var menu = $('#menu').offset();
+            // var menuhas = $('#menu').hasClass('menu-fixed');
             var $moautainIcon = $('.moautain-icon');
             // $('div.moveAble').css({'top': y});
+            // 物品移動
             $moautainIcon.css({
                 'right': xmove * -1
             });
@@ -40,7 +44,36 @@
             $('.subtitle').css({
                 'right': xmove * 1
             });
+
+            // if(ymove < 50){
+            //     console.log('bingo');
+            //     if(menuhas == true){
+            //         $('#menu').addClass('menu-down').removeClass('menu-fixed');
+            //     }
+                
+            // }else{
+            //     $('#menu').addClass('menu-fixed').removeClass('menu-down');
+            // }
+
         });
+
+        // $('#section0').mousemove(function(e){
+        //     var y = e.pageY;
+        //     var ymove = Math.round(y);
+        //     var menu = $('#menu').offset();
+        //     var menuhas = $('#menu').hasClass('menu-fixed');
+        //     console.log(ymove);
+        //     if(ymove < 50){
+        //         console.log('bingo');
+        //         if(menuhas == true){
+        //             $('#menu').addClass('menu-down').removeClass('menu-fixed');
+        //         }
+                
+        //     }else{
+        //         $('#menu').addClass('menu-fixed').removeClass('menu-down');
+        //     }
+
+        // });
 
 
         // GreenSock
