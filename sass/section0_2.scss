@@ -1,0 +1,64 @@
+// selection0
+#section0 {
+    .subtitle {
+        float: none;
+        text-align: center;
+        font-size: 55pt;
+        font-weight: 800;
+        line-height: 50pt;
+        display: inline-block;
+        margin-top: 200px;
+    }
+    .time {
+        float: none;
+        text-align: center;
+        margin: auto;
+        clear: both;
+        font-size: 15pt;
+        margin-top: 50px;
+    }
+    .mouse-wheel {
+        display: inline-block;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        font-size: 0.5rem;
+        .mouse {
+            margin: auto;
+        }
+        p {
+            text-align: center;
+            letter-spacing: 12px;
+            text-indent: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.article-brand {
+    @include size(100%, 100%);
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    color: #fff;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.slide {
+    background: url(../images/bg-top.jpg) no-repeat center center;
+}
+
+@media screen and (max-width:$md){
+	#section0 .fp-controlArrow{
+border-width: 15px 0 15px 15px;
+	}
+
+}

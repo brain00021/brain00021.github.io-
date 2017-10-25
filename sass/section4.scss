@@ -1,0 +1,29 @@
+// section4 [front-end banner]
+#section4,
+.myContent {
+    height: 500px;
+    background: #000;
+    margin-top: -20px;
+    padding: 0;
+}
+
+.fronend-banner {
+    background: url(../images/code2.gif) no-repeat center center;
+    height: 500px;
+    // position: absolute;
+    background-size: cover;
+    bottom: 0;
+    h2 {
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        font-size: 50pt;
+        top: 150px;
+    }
+    h6 {
+        @extend h2;
+        font-size: 12pt;
+        font-weight: 400;
+        top: 160
+    }
+}

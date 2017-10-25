@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#menu li").click(function(){$(this).find("a").addClass("meun-hover").parent().siblings("li").find("a").removeClass("meun-hover")});var e="index",n=(location.href,["index","post"]);for(i in n)n[i]==e&&/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&$("#pixie,#staticImg").remove()});
