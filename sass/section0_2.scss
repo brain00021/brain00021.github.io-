@@ -54,11 +54,15 @@
 
 .slide {
     background: url(../images/bg-top.jpg) no-repeat center center;
+    background-size:100%;
 }
 
-@media screen and (max-width:$md){
-	#section0 .fp-controlArrow{
-border-width: 15px 0 15px 15px;
-	}
+#slide1 {
+    background: url(../images/bg-top2.jpg) no-repeat center center;
+}
 
+@media screen and (max-width:$md) {
+    #section0 .fp-controlArrow {
+        border-width: 15px 0 15px 15px;
+    }
 }
