@@ -1,48 +1,5 @@
-$('#fullpage').fullpage({
-        'verticalCentered': true,
-        'css3': true,
-        'navigation': true,
-        'navigationPosition': 'left',
-        'navigationTooltips': ['top', 'recent-project','banner', 'resume', 'contect-me'],
-        anchors: ['top', 'recent-project','banner', 'resume', 'contect-me'],
-        scrollOverflow: true,
-        scrollBar: true,
-        sectionsColor: ['#000000', '#000', '#000', '#000'],
-        'onLeave': function(index, nextIndex, direction) {
-            if (index == 1 && direction == 'down') {
-                // $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
-                $('#menu').addClass('navbar-header-active');
-            } else if (index == 2 && direction == 'up') {
-                // $('.section').eq(index - 2).removeClass('moveUp').addClass('moveDown');  
-                $('#menu').removeClass('navbar-header-active');    
-            }
 
-            if (nextIndex == 2) {
-                TweenMax.staggerFrom(".profile-nav", 1, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
-             }else if(nextIndex == 4){
-                 TweenMax.staggerFrom(".c100", 2, {scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
-             }
-
-
-
-            // $('#staticImg').toggleClass('active', (index == 1 && direction == 'down') || (index == 2 && direction == 'up'));
-            // $('#staticImg').toggleClass('moveDown', nextIndex == 2);
-            // $('#staticImg').toggleClass('moveUp', index == 2 && direction == 'up');
-            // if (nextIndex == 2) {
-            //     $('#menu li').eq(1).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-            // } else if (nextIndex == 3) {
-            //     $('#menu li').eq(2).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-
-            // } else if (nextIndex == 4) {
-            //     $('#menu li').eq(3).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-            // } else {
-            //      $('#menu li').eq(0).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-            // }
-        }
-    });
-    <!-- fullpage js -->
-
-       $(document).ready(function() {
+    $(document).ready(function() {
         // loading
         $(".animsition").animsition({
             inClass: 'fade-in',
@@ -64,6 +21,48 @@ $('#fullpage').fullpage({
             overlay: false,
             overlayClass: 'animsition-overlay-slide',
             overlayParentElement: 'body'
+        });
+        $('#fullpage').fullpage({
+            'verticalCentered': true,
+            'css3': true,
+            'navigation': true,
+            'navigationPosition': 'left',
+            'navigationTooltips': ['top', 'recent-project', 'banner', 'resume', 'contect-me'],
+            anchors: ['top', 'recent-project', 'banner', 'resume', 'contect-me'],
+            scrollOverflow: true,
+            scrollBar: true,
+            sectionsColor: ['#000000', '#000', '#000', '#000'],
+            'onLeave': function (index, nextIndex, direction) {
+                if (index == 1 && direction == 'down') {
+                    // $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
+                    $('#menu').addClass('navbar-header-active');
+                } else if (index == 2 && direction == 'up') {
+                    // $('.section').eq(index - 2).removeClass('moveUp').addClass('moveDown');  
+                    $('#menu').removeClass('navbar-header-active');
+                }
+
+                if (nextIndex == 2) {
+                    TweenMax.staggerFrom(".profile-nav", 1, { scale: 0.5, opacity: 0, delay: 0.5, ease: Elastic.easeOut, force3D: true }, 0.2);
+                } else if (nextIndex == 4) {
+                    TweenMax.staggerFrom(".c100", 2, { scale: 0.5, opacity: 0, delay: 0.5, ease: Elastic.easeOut, force3D: true }, 0.2);
+                }
+
+
+
+                // $('#staticImg').toggleClass('active', (index == 1 && direction == 'down') || (index == 2 && direction == 'up'));
+                // $('#staticImg').toggleClass('moveDown', nextIndex == 2);
+                // $('#staticImg').toggleClass('moveUp', index == 2 && direction == 'up');
+                // if (nextIndex == 2) {
+                //     $('#menu li').eq(1).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+                // } else if (nextIndex == 3) {
+                //     $('#menu li').eq(2).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+
+                // } else if (nextIndex == 4) {
+                //     $('#menu li').eq(3).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+                // } else {
+                //      $('#menu li').eq(0).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
+                // }
+            }
         });
 
         // moving mouse

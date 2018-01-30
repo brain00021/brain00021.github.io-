@@ -1,5 +1,6 @@
 // selection0
 #section0 {
+    min-height:768px;
     .subtitle {
         float: none;
         text-align: center;
@@ -54,11 +55,12 @@
 
 .slide {
     background: url(../images/bg-top.jpg) no-repeat center center;
-    background-size:100%;
+    background-size:cover;
 }
 
 #slide1 {
     background: url(../images/bg-top2.jpg) no-repeat center center;
+    background-size:cover;
 }
 
 @media screen and (max-width:$md) {
