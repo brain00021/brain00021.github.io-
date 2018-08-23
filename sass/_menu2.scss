@@ -10,14 +10,13 @@
 }
 
 .menu-position {
-    background: none!important;
     transition: all 0.4s ease;
 }
 
 // mean&nav-button
 #menu .navbar-nav {
     float: right;
-    width: 500px;
+    width: auto;
     text-align: right;
     margin-left: 10px;
     margin-top: 2px;

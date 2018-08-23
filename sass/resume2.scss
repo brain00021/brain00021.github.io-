@@ -1,8 +1,19 @@
 // section2
 #section2 {
     background: url(../images/resume-bg-bg.gif) repeat top left;
+    animation-name: bgMove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:  alternate-reverse;
 }
-
+@keyframes bgMove{
+  0%{
+    background-position: 0% top;
+  }
+  100%{
+    background-position: 100% bottom;
+  }
+}
 .container-title {
     text-align: center;
     margin-top: -100px;

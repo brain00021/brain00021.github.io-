@@ -1,23 +1,6 @@
 // selection0
 #section0 {
-    min-height:768px;
-    .subtitle {
-        float: none;
-        text-align: center;
-        font-size: 55pt;
-        font-weight: 800;
-        line-height: 50pt;
-        display: inline-block;
-        margin-top: 200px;
-    }
-    .time {
-        float: none;
-        text-align: center;
-        margin: auto;
-        clear: both;
-        font-size: 15pt;
-        margin-top: 50px;
-    }
+    position: relative;
     .mouse-wheel {
         display: inline-block;
         margin: 0 auto;
@@ -25,6 +8,7 @@
         right: 0;
         left: 0;
         bottom: 10px;
+        z-index: 50;
         font-size: 0.5rem;
         .mouse {
             margin: auto;
@@ -39,32 +23,53 @@
 }
 
 .article-brand {
-    @include size(100%, 100%);
+    @include size(30%,auto);
     position: absolute;
-    text-align: center;
+    text-align: left;
     margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 80px;
     z-index: 50;
     color: #fff;
-    vertical-align: middle;
+    padding:5px;
+    background:rgba(#000,0.2);
     pointer-events: none;
+    .subtitle {
+        float: none;
+        text-align: left;
+        font-size: 30pt;
+        display: inline;
+        margin-top:10px;
+    }
+    .time {
+        float: none;
+        text-align:left;
+        color:#888;
+        margin: auto;
+        clear: both;
+        font-size: 15pt;
+        font-weight: normal;
+        margin-top: 10px;
+    }
 }
 
 .slide {
-    background: url(../images/bg-top.jpg) no-repeat center center;
-    background-size:cover;
+  vertical-align: middle;
+  img{width:100%;}
 }
-
 #slide1 {
-    background: url(../images/bg-top2.jpg) no-repeat center center;
-    background-size:cover;
+  background: #ff00cc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#slide2 {
+  background:#cad2dd;
 }
 
 @media screen and (max-width:$md) {
     #section0 .fp-controlArrow {
         border-width: 15px 0 15px 15px;
+    }
+    .article-brand {
+      width:100%;
     }
 }

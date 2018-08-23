@@ -1,9 +1,11 @@
 #section2{
+
 	.paper-container2{
 		@include size(100%,260px);
 		background-color: #D0B1AF;
 		background: url(../images/bg3.jpg) repeat top center;
-		position: relative;
+    position: relative;
+
 		// bottom:50px;
 		-webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
 		clip-path: polygon(0 0, 0% 100%, 100% 100%);
@@ -16,8 +18,21 @@
 		}
 	}
 }
+
 #section3{
-	background: url(../images/bg3.jpg) repeat top left;
+  background: url(../images/bg3.jpg) repeat top left;
+  animation-name: bgMove2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction:  alternate-reverse;
+}
+@keyframes bgMove2{
+  0%{
+    background-size: 100%;
+  }
+  100%{
+    background-size: 150%;
+  }
 }
 .paper-container3{
 	@include size(70%,100%);

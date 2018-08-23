@@ -179,7 +179,26 @@ body {
     background: url(../images/bg3.jpg) repeat top center; }
 
 #section3 {
-  background: url(../images/bg3.jpg) repeat top left; }
+  background: url(../images/bg3.jpg) repeat top left;
+  -webkit-animation-name: bgMove2;
+  animation-name: bgMove2;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; }
+
+@-webkit-keyframes bgMove2 {
+  0% {
+    background-size: 100%; }
+  100% {
+    background-size: 150%; } }
+
+@keyframes bgMove2 {
+  0% {
+    background-size: 100%; }
+  100% {
+    background-size: 150%; } }
 
 .paper-container3 {
   width: 70%;
@@ -713,22 +732,7 @@ body {
     background-size: 100%; } }
 
 #section0 {
-  min-height: 768px; }
-  #section0 .subtitle {
-    float: none;
-    text-align: center;
-    font-size: 55pt;
-    font-weight: 800;
-    line-height: 50pt;
-    display: inline-block;
-    margin-top: 200px; }
-  #section0 .time {
-    float: none;
-    text-align: center;
-    margin: auto;
-    clear: both;
-    font-size: 15pt;
-    margin-top: 50px; }
+  position: relative; }
   #section0 .mouse-wheel {
     display: inline-block;
     margin: 0 auto;
@@ -736,6 +740,7 @@ body {
     right: 0;
     left: 0;
     bottom: 10px;
+    z-index: 50;
     font-size: 0.5rem; }
     #section0 .mouse-wheel .mouse {
       margin: auto; }
@@ -746,31 +751,55 @@ body {
       margin-top: 10px; }
 
 .article-brand {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: auto;
   position: absolute;
-  text-align: center;
+  text-align: left;
   margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 80px;
   z-index: 50;
   color: #fff;
-  vertical-align: middle;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2);
   pointer-events: none; }
+  .article-brand .subtitle {
+    float: none;
+    text-align: left;
+    font-size: 30pt;
+    display: inline;
+    margin-top: 10px; }
+  .article-brand .time {
+    float: none;
+    text-align: left;
+    color: #888;
+    margin: auto;
+    clear: both;
+    font-size: 15pt;
+    font-weight: normal;
+    margin-top: 10px; }
 
 .slide {
-  background: url(../images/bg-top.jpg) no-repeat center center;
-  background-size: cover; }
+  vertical-align: middle; }
+  .slide img {
+    width: 100%; }
 
 #slide1 {
-  background: url(../images/bg-top2.jpg) no-repeat center center;
-  background-size: cover; }
+  background: #ff00cc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #333399, #ff00cc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(45deg, #333399, #ff00cc);
+  background: linear-gradient(45deg, #333399, #ff00cc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+#slide2 {
+  background: #cad2dd; }
 
 @media screen and (max-width: 992px) {
   #section0 .fp-controlArrow {
-    border-width: 15px 0 15px 15px; } }
+    border-width: 15px 0 15px 15px; }
+  .article-brand {
+    width: 100%; } }
 
 .navbar-brand {
   width: 70px;
@@ -782,14 +811,13 @@ body {
     width: 100%; }
 
 .menu-position {
-  background: none !important;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
 #menu .navbar-nav {
   float: right;
-  width: 500px;
+  width: auto;
   text-align: right;
   margin-left: 10px;
   margin-top: 2px; }
@@ -1612,7 +1640,26 @@ body {
     top: 160; }
 
 #section2 {
-  background: url(../images/resume-bg-bg.gif) repeat top left; }
+  background: url(../images/resume-bg-bg.gif) repeat top left;
+  -webkit-animation-name: bgMove;
+  animation-name: bgMove;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; }
+
+@-webkit-keyframes bgMove {
+  0% {
+    background-position: 0% top; }
+  100% {
+    background-position: 100% bottom; } }
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% top; }
+  100% {
+    background-position: 100% bottom; } }
 
 .container-title {
   text-align: center;
