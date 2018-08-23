@@ -1,4 +1,7 @@
 $menu-color:#50E3c2;
+.animsition{
+  overflow: hidden;
+}
 #menu {
     background: rgba(#000, 0.5);
     @include size(100%, auto);
