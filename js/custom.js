@@ -1,27 +1,18 @@
 
     $(document).ready(function() {
-        // loading
-        // $(".animsition").animsition({
-        //     inClass: 'fade-in',
-        //     outClass: 'fade-out',
-        //     inDuration: 1500,
-        //     outDuration: 800,
-        //     linkElement: '.animsition-link',
-        //     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-        //     loading: true,
-        //     loadingParentElement: 'body', //animsition wrapper element
-        //     loadingClass: 'animsition-loading',
-        //     loadingInner: '', // e.g '<img src="loading.svg" />'
-        //     timeout: false,
-        //     timeoutCountdown: 5000,
-        //     onLoadEvent: true,
-        //     browser: ['animation-duration', '-webkit-animation-duration'],
-        //     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-        //     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-        //     overlay: false,
-        //     overlayClass: 'animsition-overlay-slide',
-        //     overlayParentElement: 'body'
-        // });
+      function loadRates(){
+        $.getJSON("profile.json").done(
+          function(data){
+            var msg = '<h2>輸入資料</h2>';                 // Start message
+            for(var i =0; i< data.events.length ; i++){
+              msg = '<a class="profile-nav" href="'+ data.events[i].url + '"><h6 class="profile-title">'+ data.events[i].title + '</h6><div class="profile-work" style="background:url('+ data.events[i].img + ') no-repeat center center"></div></div></a>'
+              $('.profile-collect').append('<div class="col-xs-12 col-sm-4 col-md-4 profile-article">' + msg + '</div>');
+            }
+           
+          }
+        );
+      }
+      loadRates();
         $('#fullpage').fullpage({
             'verticalCentered': true,
             'css3': true,
