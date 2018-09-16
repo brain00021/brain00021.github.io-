@@ -861,7 +861,7 @@ body {
 #section1 {
   background: url(../images/resume_bg_bg2.jpg) repeat top center; }
   #section1 .container-title {
-    margin-top: -230px; }
+    margin-top: -100px; }
     #section1 .container-title span {
       width: 103px;
       height: 183px;
@@ -1672,6 +1672,9 @@ body {
     height: 183px;
     display: block;
     margin: 0 auto; }
+
+.profile-article {
+  margin: 15px auto; }
 
 #resume-logo {
   left: -100px; }

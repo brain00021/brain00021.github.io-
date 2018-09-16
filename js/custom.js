@@ -1,16 +1,19 @@
 
     $(document).ready(function() {
       function loadRates(){
-        $.getJSON("profile.json").done(
+        $.getJSON("./profile.json").done(
           function(data){
-            var msg = '<h2>輸入資料</h2>';                 // Start message
+            var msg = '<h2>輸入資料</h2>';
+            // Start message
             for(var i =0; i< data.events.length ; i++){
-              msg = '<a class="profile-nav" href="'+ data.events[i].url + '"><h6 class="profile-title">'+ data.events[i].title + '</h6><div class="profile-work" style="background:url('+ data.events[i].img + ') no-repeat center center"></div></div></a>'
+              msg = '<a class="profile-nav" href="'+ data.events[i].url + ' target="_blank""><h6 class="profile-title">'+ data.events[i].title + '<span>'+  data.events[i].date +'</span></h6><div class="profile-work" style="background:url('+ data.events[i].img + ') no-repeat center center"></div></div></a>'
               $('.profile-collect').append('<div class="col-xs-12 col-sm-4 col-md-4 profile-article">' + msg + '</div>');
             }
-           
           }
-        );
+        ).fail(function(){
+          msg = '<h1 style="color:#fff; text-algin:center">資料錯誤</h1>'
+          $('.profile-collect').append(msg);
+        });
       }
       loadRates();
         $('#fullpage').fullpage({
