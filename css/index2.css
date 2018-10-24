@@ -762,7 +762,7 @@ body {
   top: 80px;
   z-index: 50;
   color: #fff;
-  padding: 5px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0.2);
   pointer-events: none; }
   .article-brand .subtitle {
@@ -774,7 +774,7 @@ body {
   .article-brand .time {
     float: none;
     text-align: left;
-    color: #888;
+    color: #e8e8e8;
     margin: auto;
     clear: both;
     font-size: 15pt;
@@ -825,7 +825,7 @@ body {
   margin-left: 10px;
   margin-top: 2px; }
   #menu .navbar-nav li {
-    margin-top: 2px;
+    margin-top: 10px;
     position: relative;
     width: 150px; }
     #menu .navbar-nav li a {
@@ -861,7 +861,7 @@ body {
 #section1 {
   background: url(../images/resume_bg_bg2.jpg) repeat top center; }
   #section1 .container-title {
-    margin-top: -100px; }
+    margin-top: -70px; }
     #section1 .container-title span {
       width: 103px;
       height: 183px;
@@ -921,7 +921,7 @@ body {
   transition: all 0.5s ease;
   vertical-align: middle;
   overflow: visible;
-  opacity: 1; }
+  opacity: 0.2; }
   .profile-nav:after {
     content: "";
     position: absolute;
@@ -1575,7 +1575,7 @@ body {
 
 #submit {
   background: #000;
-  border: 0px solid #e9e9e9;
+  border: 1px solid #e9e9e9;
   height: 45px;
   color: #fff;
   border-radius: 0; }
@@ -1637,6 +1637,9 @@ body {
     font-weight: 800;
     font-size: 50pt;
     top: 150px; }
+    @media screen and (max-width: 768px) {
+      .fronend-banner h2, .fronend-banner h6 {
+        font-size: 35pt; } }
   .fronend-banner h6 {
     font-size: 12pt;
     font-weight: 400;
@@ -1691,6 +1694,10 @@ body {
   bottom: -50px; }
 
 #bars .c100 {
+  opacity: 0;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
   margin: 50px 10px 0px 10px; }
 
 .button-resume {

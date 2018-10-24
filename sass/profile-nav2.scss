@@ -2,7 +2,7 @@
 #section1 {
     background: url(../images/resume_bg_bg2.jpg) repeat top center;
     .container-title {
-        margin-top: -100px;
+        margin-top: -70px;
         span {
             @include size(103px, 183px);
             display: block;
@@ -67,7 +67,7 @@
     vertical-align: middle;
     overflow: visible;
     // transform: matrix(-100, 0, 0);
-    opacity: 1;
+    opacity: 0.2;
     &:after {
         content: "";
         position: absolute;

@@ -19,6 +19,9 @@
         font-weight: 800;
         font-size: 50pt;
         top: 150px;
+        @media screen and (max-width:768px) {
+          font-size:35pt;
+        }
     }
     h6 {
         @extend h2;

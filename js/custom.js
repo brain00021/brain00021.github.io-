@@ -16,70 +16,35 @@
         });
       }
       loadRates();
+      
         $('#fullpage').fullpage({
-            'verticalCentered': true,
-            'css3': true,
-            'navigation': true,
-            'navigationPosition': 'left',
-            'navigationTooltips': ['home', 'recent-project', 'banner', 'resume', 'contect-me'],
+            verticalCentered: true,
+            css3: true,
+            navigation: true,
+            navigationPosition: 'left',
+            navigationTooltips: ['home', 'recent-project', 'banner', 'resume', 'contect-me'],
             anchors: ['home', 'recent-project', 'banner', 'resume', 'contect-me'],
-            scrollOverflow: true,
+            autoScrolling:false,
+            scrollHorizontally: true,
             scrollBar: true,
+            scrollOverflow:false,
             sectionsColor: ['#000000', '#000', '#000', '#000'],
-            'onLeave': function (index, nextIndex, direction) {
-                if (index == 1 && direction == 'down') {
+            onLeave: function(origin, destination, direction){
+              if(destination.index == 1 || destination.index == 2 || destination.index == 3 ){ 
                     // $('.section').eq(index - 1).removeClass('moveDown').addClass('moveUp');
                     $('#menu').addClass('navbar-header-active');
-                } else if (index == 2 && direction == 'up') {
+                } else if (origin && origin.index == 1) {
                     // $('.section').eq(index - 2).removeClass('moveUp').addClass('moveDown');  
                     $('#menu').removeClass('navbar-header-active');
                 }
-
-                if (nextIndex == 2) {
-                    TweenMax.staggerFrom(".profile-nav", 1, { scale: 0.5, opacity: 0, delay: 0.5, ease: Elastic.easeOut, force3D: true }, 0.2);
-                } else if (nextIndex == 4) {
-                    TweenMax.staggerFrom(".c100", 2, { scale: 0.5, opacity: 0, delay: 0.5, ease: Elastic.easeOut, force3D: true }, 0.2);
+              //after leaving section 2
+              if (destination.index == 1) {
+                    TweenMax.staggerTo(".profile-nav", 1, { scale: 1, opacity:1, delay: 1, ease: Elastic.easeOut, force3D: true }, 0.2);
+                } 
+              if (destination.index == 3) {
+                    TweenMax.staggerTo(".c100", 2, { scale: 1, opacity: 1, delay:1, ease: Elastic.easeOut, force3D: true }, 0.2);
                 }
-
-
-
-                // $('#staticImg').toggleClass('active', (index == 1 && direction == 'down') || (index == 2 && direction == 'up'));
-                // $('#staticImg').toggleClass('moveDown', nextIndex == 2);
-                // $('#staticImg').toggleClass('moveUp', index == 2 && direction == 'up');
-                // if (nextIndex == 2) {
-                //     $('#menu li').eq(1).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-                // } else if (nextIndex == 3) {
-                //     $('#menu li').eq(2).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-
-                // } else if (nextIndex == 4) {
-                //     $('#menu li').eq(3).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-                // } else {
-                //      $('#menu li').eq(0).find('a').addClass('meun-hover').parent().siblings('li').find('a').removeClass('meun-hover');
-                // }
             }
-        });
-
-        // moving mouse
-        $(window).mousemove(function(e) {
-            var y = e.pageY;
-            var x = e.pageX;
-            var xmove = Math.round(x * 0.05);
-            // var ymove = Math.round(y);
-            // var menu = $('#menu').offset();
-            // var menuhas = $('#menu').hasClass('menu-fixed');
-            var $moautainIcon = $('.moautain-icon');
-            // $('div.moveAble').css({'top': y});
-            // 物品移動
-            // $moautainIcon.css({
-            //     'right': xmove * -1
-            // });
-            // $('#staticImg').css({
-            //     'left': xmove
-            // });
-            // $('.subtitle').css({
-            //     'right': xmove * 1
-            // });
-
         });
         $(window).resize(function(){
             var window_height = $(window).height();
@@ -115,6 +80,3 @@
     });
 
 // skill -plugin
-
-
-// timeLine.from(".subtitle", 1, {opacity:0,right:-500,ease: Power2.ease}).from(".time",1,{opacity:0,right:-500,ease:Power2.ease});
