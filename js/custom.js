@@ -39,10 +39,10 @@
                 }
               //after leaving section 2
               if (destination.index == 1) {
-                    TweenMax.staggerTo(".profile-nav", 1, { scale: 1, opacity:1, delay: 1, ease: Elastic.easeOut, force3D: true }, 0.2);
+                    TweenMax.staggerTo(".profile-nav", 0.5, { scale: 1, opacity:1, ease: Elastic.easeOut, force3D: true }, 0.2);
                 } 
               if (destination.index == 3) {
-                    TweenMax.staggerTo(".c100", 2, { scale: 1, opacity: 1, delay:1, ease: Elastic.easeOut, force3D: true }, 0.2);
+                    TweenMax.staggerTo(".c100", 0.5, { scale: 1, opacity: 1, delay:0.4, ease: Elastic.easeOut, force3D: true }, 0.2);
                 }
             }
         });
