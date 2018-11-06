@@ -1,13 +1,15 @@
 block banner
   // index-fullview
   #section0.section.active
-    .article-brand
-      h1.subtitle.typewrite( data-period="2000" ,data-type='[ "Hi, Im Brian.", "I am Creative.", "I Love Design.", "I Love to Develop."]')
-      h5.time 2013-2018 designer journey
-    #slide2.slide
-      img(src='images/allprofile.jpg')
+    .slide-title-bg
+      .article-brand
+        h1.txt-rotate(
+      data-period="2000"
+      data-rotate='[ "Code Designer", "Creative", "YES ", "pretty.", "fun!" ]')
+        h5.time 2013-2018 designer journey
     #slide1.slide.active
-      img(src='images/bg-top2.jpg')
+      .banner-swiper-container(options='.banner-swiper-container')
+        .banner-collect.swiper-wrapper
     .mouse-wheel
       .mouse
       p Scroll

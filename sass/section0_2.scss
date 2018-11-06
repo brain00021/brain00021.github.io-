@@ -1,6 +1,29 @@
 // selection0
 #section0 {
     position: relative;
+    .slide-title-bg{
+      position: absolute;
+      @include size(100%,100%);
+      top:0;
+      left:0;
+      z-index: 20;
+      background:url(../images/slider-bg.png) no-repeat right bottom;
+      background-size:cover;
+      pointer-events: none;
+      @media screen and (max-width:768px){
+        background-position-x: -20%;
+      }
+    }
+    .banner-collect{
+      position: relative;
+    }
+    .banner-nav{
+      width:250px;
+      margin-left:5px;
+      height:250px;
+      overflow: hidden;
+      img{height:100%;}
+    }
     .mouse-wheel {
         display: inline-block;
         margin: 0 auto;

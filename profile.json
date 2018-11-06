@@ -23,6 +23,12 @@
       "date" : "2018/4",
       "img" : "./images/events/alchcoin.jpg",
       "title" : " alchemycoin "
+    },
+    {
+      "url" : "javascript: void(0)",
+      "date" : "2013/4",
+      "img" : "./images/events/aika/image2_navil.jpg",
+      "title" : "aika commercial"
     }
   ]
 }

@@ -1,11 +1,14 @@
 block project
   // project
   #section1.section
-    #section1-container.container
+    #section1-container
       .container-title
         span
           img(src='images/work-title1.png', alt='work-profile')
-      // profile-select
-      .row.profile-collect
-      a.moreprofile(href='http://brian.kumar.tw/web_design.html', target='blank') MORE
+        // profile-select
+        .swiper-container
+          .profile-collect.swiper-wrapper
+          .swiper-button-next
+          .swiper-button-prev
+      //- a.moreprofile(href='http://brian.kumar.tw/web_design.html', target='blank') MORE
     // <div class="paper-container container-fluid"></div>
