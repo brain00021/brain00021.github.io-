@@ -9,10 +9,11 @@
 
 .fronend-banner {
     background: url(../images/code2.gif) no-repeat center center;
-    height: 500px;
+    height: auto;
     // position: absolute;
     background-size: cover;
     bottom: 0;
+    padding:10px;
     h2 {
         text-align: center;
         color: #fff;

@@ -14,16 +14,20 @@ $(document).ready(function() {
       }
     ).fail(function(){
       msg = '<h1 style="color:#fff; text-algin:center">資料錯誤</h1>'
-      $('.profile-collect').append(msg);
+      $('.profile-collect ,.banner-collect').append(msg);
     });
   }
   loadRates();
   // menu 按鈕
   var navBarButton = $('.navbar-toggle-custom');
+  var openBolloen = true;
   navBarButton.click(() => {
     navBarButton.toggleClass('open');
-   $('.collapse').css({'height':'100%'});
     $('.all-wrapper ,.navbar-collapse-custom').toggleClass('open');
+  });
+  $('.navbar-nav').find('li').find('a').click(() => {
+    navBarButton.removeClass('open');
+    $('.all-wrapper ,.navbar-collapse-custom').removeClass('open');
   });
 
   

@@ -35,9 +35,9 @@
       <div>
         <div class="menu-position" id="menu">
           <!-- Brand and toggle get grouped for better mobile display-->
-          <div class="container">
+          <div class="header-wrapper">
             <div class="navbar-header">
-              <div class="navbar-toggle-custom" type="button" data-toggle="collapse" data-target=".navbar-collapse-custom"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div><a class="navbar-brand" href="#"><img src="images/logo@1x.png" alt="logo"></a>
+              <div class="navbar-toggle-custom"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div><a class="navbar-brand" href="#"><img src="images/logo@1x.png" alt="logo"></a>
             </div>
           </div>
         </div>
@@ -60,8 +60,9 @@
         <div class="section active" id="section0">
           <div class="slide-title-bg">
             <div class="article-brand">
-              <h1 class="txt-rotate" data-period="2000" data-rotate="[ &quot;Code Designer&quot;, &quot;Creative&quot;, &quot;YES &quot;, &quot;pretty.&quot;, &quot;fun!&quot; ]"></h1>
-              <h5 class="time">2013-2018 designer journey</h5>
+              <h1>Brian Li </h1>
+              <h2 class="txt-rotate" data-period="2000" data-rotate="[ &quot;Code Designer&quot;, &quot;Web developer&quot;, &quot;UI/UX designer&quot;, &quot;Crazy fun!&quot; ]"></h2>
+              <h5 class="time">2013-2018 web profile</h5>
             </div>
           </div>
           <div class="slide active" id="slide1">
@@ -238,10 +239,17 @@
           slidesPerView: 'auto',
           slidesPerColumn: 3,
           spaceBetween: 10,
+          autoplay: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
           },
+          breakpoints: {
+            1366: {
+              slidesPerView: 'auto',
+              slidesPerColumn: 4,
+            }
+          }
         });
       });
     </script>
