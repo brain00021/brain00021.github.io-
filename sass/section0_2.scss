@@ -1,6 +1,47 @@
 // selection0
 #section0 {
     position: relative;
+    .fp-tableCell{
+      vertical-align: top;
+    }
+    .banner-swiper-container{
+      margin:75px 0px;
+    }
+    .atricle-profile{
+      width:80%;
+      margin:auto;
+      @media screen and (max-width:768px){
+        display: none;
+      }
+    }
+    .slide-title-bg{
+      position: absolute;
+      @include size(100%,100%);
+      top:0;
+      left:0;
+      z-index: 20;
+      background:url(../images/slider-bg.png) no-repeat right bottom;
+      background-size:cover;
+      pointer-events: none;
+      background-position: 180px;
+      @media screen and (max-width:1200px){
+
+        background-position:20%;
+      }
+    }
+    .banner-collect{
+      position: relative;
+    }
+    .banner-nav{
+      width:250px;
+      margin-left:5px;
+      height:250px;
+      overflow: hidden;
+      img{height:100%;}
+      @media screen and (max-width:640px){
+        @include size(120px,120px);
+      }
+    }
     .mouse-wheel {
         display: inline-block;
         margin: 0 auto;
@@ -9,7 +50,6 @@
         left: 0;
         bottom: 10px;
         z-index: 50;
-        font-size: 0.5rem;
         .mouse {
             margin: auto;
         }
@@ -25,30 +65,29 @@
 .article-brand {
     @include size(30%,auto);
     position: absolute;
-    text-align: left;
+    text-align: center;
     margin: auto;
-    top: 80px;
+    bottom: 12%;
+    right:0;
     z-index: 50;
-    color: #fff;
     padding:10px;
-    background:rgba(#000,0.2);
+    // background:rgba(#000,0.2);
     pointer-events: none;
     .subtitle {
-        float: none;
-        text-align: left;
-        font-size: 30pt;
-        display: inline;
-        margin-top:10px;
+      color:#282e38;
+      float: none;
+      text-align: left;
+      font-size: 30pt;
+      display: inline;
+      margin-top:10px;
     }
     .time {
-        float: none;
-        text-align:left;
-        color:#e8e8e8;
-        margin: auto;
-        clear: both;
-        font-size: 15pt;
-        font-weight: normal;
-        margin-top: 10px;
+      color:#696d72;
+      margin: auto;
+      clear: both;
+      font-size: 15pt;
+      font-weight: normal;
+      margin-top: 10px;
     }
 }
 

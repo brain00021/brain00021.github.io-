@@ -1,19 +1,23 @@
 // selection1
 #section1 {
-    background: url(../images/resume_bg_bg2.jpg) repeat top center;
-    .container-title {
-        margin-top: -70px;
-        span {
-            @include size(103px, 183px);
-            display: block;
-            margin: 0 auto;
-            img {
-                width: 100%;
-            }
-        }
+  background: url(../images/resume_bg_bg2.jpg) repeat top center;
+  .container-title {
+      margin-top: 0;
+  }
+  .profile-article{
+    margin: 15px;
+    max-width:480px;
+  }
+  @media screen and (max-width:768px){
+    .profile-article{
+      margin:0;
+      padding:10px;
     }
+  }
 }
-
+.swiper-container{
+ margin-left:10px;
+}
 // decration
 .paper-container {
     background: url(../images/paper-edge-top.png) left top;
@@ -28,143 +32,82 @@
 }
 
 .profile-collect {
-    margin-top: 40px;
     position: relative;
     z-index: 50;
 }
 
 .profile-work {
-    position: absolute;
+    position: relative;
     display: block;
     top: 0;
-    background-size: cover;
-    @include size(100%, 100%);
-    transition: all 0.5s ease;
-}
-
-#profile-work1 {
-    background: url(../images/lettory.jpg) no-repeat center center;
-}
-
-#profile-work2 {
-    background: url(../images/monster-village3.gif) no-repeat center center;
-    background-size: cover;
-}
-
-#profile-work3 {
-    background: #fff url(../images/shopping_1.jpg) no-repeat center center;
+    @include size(100%,300px);
     background-size: 100%;
+    transition: all 0.5s ease;
+    &:after {
+      content: "";
+      position: absolute;
+      font-size: 15pt;
+      line-height: 15pt;
+      color: #fff;
+      text-align: center;
+      background:rgba(#000,0.5) url('../images/white-search.png') no-repeat center center;
+      background-size: 25%;
+      top: 0;
+      left: 0;
+      @include size(0,
+      0);
+      border: 0px inset #fff;
+      border-width: 100%;
+      transition: all 0.5s ease 0.4s;
+  }
+  &:hover {
+    text-decoration: none;
+    &:after {
+        // margin-left: $move-margin-left;
+        margin-top:0;
+        z-index: 30;
+        border: 2px solid #fff;
+        @include size(100%,
+        100%);
+    }
+    //hover fin
 }
-
+}
+.swiper-button-next, .swiper-button-prev{
+  z-index: 99;
+  background-color:#fff;
+  padding: 50px 20px;
+  &.swiper-button-disabled{
+    pointer-events: stroke;
+  }
+}
 .profile-nav {
     position: relative;
     display: inline-block;
-    background: #000 no-repeat top center;
+    // background: #000 no-repeat top center;
     z-index: 80;
-    @include size(100%, 300px);
-    margin-top: 5px;
+    @include size(100%, auto);
     transition: all 0.5s ease;
     vertical-align: middle;
     overflow: visible;
-    // transform: matrix(-100, 0, 0);
-    opacity: 0.2;
-    &:after {
-        content: "";
-        position: absolute;
-        font-size: 15pt;
-        line-height: 15pt;
-        color: #fff;
-        text-align: center;
-        background: url('../images/white-search.png') no-repeat center center;
-        background-size: 25%;
-        top: 0;
-        left: 0;
-        @include size(0,
-        0);
-        border: 0px inset #fff;
-        border-width: 100%;
-        transition: all 0.5s ease 0.4s;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        background: rgba(#000, 0.5);
-        top: 0;
-        left: 0;
-        @include size(100%,
-        0%);
-        z-index: 30;
-        transition: all 0.5s ease 0.2s;
-    }
     .profile-title {
         opacity: 1;
-        color: #000;
-        background: rgba(#fff, 1);
+        color: #fff;
         font-size: 12pt;
         text-decoration: none;
         text-align: center;
         vertical-align: bottom;
         z-index: 50;
-        display: block;
+        display:inline;
         padding: 10px;
         transition: all 0.5s ease;
-        margin-top: -20px;
+        margin-top: 0px;
+        span{
+          @include size(auto,auto);
+        }
     }
-    //hover nav
-    $move-margin-top:0px;
-    
-    &:hover {
-        text-decoration: none;
-        &:after {
-            // margin-left: $move-margin-left;
-            margin-top: $move-margin-top;
-            z-index: 30;
-            border: 2px solid #fff;
-            @include size(100%,
-            100%);
-        }
-        &:before {
-            @include size(100%,
-            100%);
-            margin-top: $move-margin-top - 5;
-        }
-        .profile-work {
-            margin-top: $move-margin-top - 10;
-        }
-        .profile-title {
-            opacity: 1;
-            margin-top: $move-margin-top;
-        }
-        //hover fin
-    }
-    //.profile-nav
 }
 
-.moreprofile {
-    @include size(30%,
-    50px);
-    display: block;
-    min-width: 200px;
-    border: 1px solid #fff;
-    background: none;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    margin: 20px auto;
-    font-size: 15pt;
-    letter-spacing: 5px;
-    transition: all 0.5s ease;
-    z-index: 80;
-    border-radius: 0px;
-    top: 0;
-    &:hover {
-        background: $menu-color;
-        text-decoration: none;
-        color: #000;
-        border: none;
-        top: -5px;
-    }
-}
 
 @media screen and (max-width:$md) and (max-height:860px) {
     .col-sm-4 {
@@ -182,14 +125,10 @@
     }
     #section1-container {
         padding-bottom: 120px;
-        padding-top: 80px;
+        padding-top: 0px;
     }
     .profile-collect {
-        padding: 20px 10px 0px 10px;
-    }
-    .profile-nav {
-        margin-bottom: 20px;
-        height: 200px;
+        padding: 0;
     }
 }
 

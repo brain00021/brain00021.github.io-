@@ -25,6 +25,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
     link(rel='stylesheet', type='text/css', href='lib/css/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='lib/css/bootstrap-theme.min.css')
     link(rel='stylesheet', href='lib/css/animsition.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css')
     // my css
     link(rel='stylesheet', type='text/css', href='css/index2.css')
   body
@@ -37,6 +38,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
         block resume
         block contectUs
     // plugin js
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js')
     script(src='js/jquery-1.12.4.min.js')
     script(src='js/jquery-ui.min.js')
     script(src='js/TweenMax.min.js')
@@ -46,3 +48,45 @@ html(xmlns="http://www.w3.org/1999/xhtml")
     script(type='text/javascript', src='lib/js/typewriter.js')
     script(type='text/javascript', src='js/custom.js')
     script.
+      // swiper
+      $(window).load(function () {
+        var secondswiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          width:window.innerWidth,
+          slidesPerView: 'auto',
+          freeMode: false,
+          grabCursor: false,
+          // slideActiveClass: 'router-link-exact-active',
+          slideToClickedSlide: true,
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            1366: {
+              slidesPerView: 'auto',
+              freeMode: true,
+              grabCursor: true,
+            }
+          }
+        });
+        
+        var bannerswiper = new Swiper('.banner-swiper-container', {
+          slidesPerView: 'auto',
+          slidesPerColumn: 3,
+          spaceBetween: 10,
+          autoplay: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            1366: {
+              slidesPerView: 'auto',
+              slidesPerColumn: 4,
+              spaceBetween: 2,
+            }
+          }
+        });
+      });
