@@ -1,8 +1,23 @@
 // selection0
 #section0 {
     position: relative;
+<<<<<<< HEAD
     .banner-swiper-container{
       margin:75px 0px 30px;
+=======
+    .fp-tableCell{
+      vertical-align: top;
+    }
+    .banner-swiper-container{
+      margin:75px 0px;
+    }
+    .atricle-profile{
+      width:80%;
+      margin:auto;
+      @media screen and (max-width:768px){
+        display: none;
+      }
+>>>>>>> master
     }
     .slide-title-bg{
       position: absolute;
@@ -13,8 +28,13 @@
       background:url(../images/slider-bg.png) no-repeat right bottom;
       background-size:cover;
       pointer-events: none;
+<<<<<<< HEAD
       background-position: 100px;
       @media screen and (max-width:768px){
+=======
+      background-position: 180px;
+      @media screen and (max-width:1200px){
+>>>>>>> master
 
         background-position:20%;
       }
@@ -28,8 +48,13 @@
       height:250px;
       overflow: hidden;
       img{height:100%;}
+<<<<<<< HEAD
       @media screen and (max-width:768px){
         @include size(180px,180px);
+=======
+      @media screen and (max-width:640px){
+        @include size(120px,120px);
+>>>>>>> master
       }
     }
     .mouse-wheel {

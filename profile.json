@@ -1,6 +1,12 @@
 {
   "events":[
     {
+      "url" : "javascript: void(0)",
+      "date" : "2018/8",
+      "img" : "./images/events/OCMS/gamebling/index/index.png",
+      "title" : "qiwin"
+    },
+    {
       "url" : "https://medium.com/@brianli_42376/%E5%A6%96%E6%80%AA%E6%9D%91%E5%A4%A7%E6%A8%82%E9%80%8F-%E8%A3%BD%E4%BD%9C%E6%B5%81%E7%A8%8B-107b3400c3f8#.7usztpm6c",
       "date" : "2015/08",
       "img" : "./images/events/lettory.jpg",
@@ -44,6 +50,15 @@
     },
     {
       "url" : "javascript: void(0)",
+<<<<<<< HEAD
+=======
+      "date" : "2014/1",
+      "img" : "./images/events/lala/image7_1.jpg",
+      "title" : "lala comercial"
+    },
+    {
+      "url" : "javascript: void(0)",
+>>>>>>> master
       "date" : "2014/4",
       "img" : "./images/events/lala/image6.jpg",
       "title" : "lala comercial"
@@ -63,7 +78,11 @@
     {
       "url" : "javascript: void(0)",
       "date" : "2014/4",
+<<<<<<< HEAD
       "img" : "./images/events/gulo/image7_1.jpg",
+=======
+      "img" : "./images/events/gulo/image7.jpg",
+>>>>>>> master
       "title" : "gulo office website"
     },
     {
@@ -71,6 +90,23 @@
       "date" : "2014/5",
       "img" : "./images/events/lala/image5.jpg",
       "title" : "lala commercial"
+<<<<<<< HEAD
+=======
+    }
+  ],
+  "uxdesign":[
+    {
+      "url" : "javascript: void(0)",
+      "date" : "2017/08",
+      "img" : "./images/uxdesign/clickNum/index.jpg",
+      "title" : " CLick Num Lottery Website "
+    },
+    {
+      "url" : "javascript: void(0)",
+      "date" : "2015/08",
+      "img" : "./images/events/lettory.jpg",
+      "title" : " Monster Village@Lettory Game "
+>>>>>>> master
     }
   ]
 }

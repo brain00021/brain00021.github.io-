@@ -40,8 +40,13 @@
     position: relative;
     display: block;
     top: 0;
+<<<<<<< HEAD
     background-size: cover;
     @include size(100%,300px);
+=======
+    @include size(100%,300px);
+    background-size: 100%;
+>>>>>>> master
     transition: all 0.5s ease;
     &:after {
       content: "";
