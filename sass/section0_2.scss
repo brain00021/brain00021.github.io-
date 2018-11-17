@@ -1,10 +1,6 @@
 // selection0
 #section0 {
     position: relative;
-<<<<<<< HEAD
-    .banner-swiper-container{
-      margin:75px 0px 30px;
-=======
     .fp-tableCell{
       vertical-align: top;
     }
@@ -14,29 +10,33 @@
     .atricle-profile{
       width:80%;
       margin:auto;
-      @media screen and (max-width:768px){
+      @media screen and (max-width:1200px){
         display: none;
       }
->>>>>>> master
     }
     .slide-title-bg{
       position: absolute;
-      @include size(100%,100%);
-      top:0;
-      left:0;
+      @include size(50%,100%);
+      bottom:0;
+      right:0;
       z-index: 20;
-      background:url(../images/slider-bg.png) no-repeat right bottom;
+      // background:url(../images/slider-bg.png) no-repeat right bottom;
+      background-color:#fff;
       background-size:cover;
       pointer-events: none;
-<<<<<<< HEAD
-      background-position: 100px;
-      @media screen and (max-width:768px){
-=======
       background-position: 180px;
+      -webkit-clip-path: polygon(100% 0, 80% 0, 78% 16%, 75% 31%, 70% 46%, 64% 59%, 57% 69%, 48% 80%, 38% 87%, 28% 91%, 19% 94%, 9% 97%, 0 100%, 100% 100%);
+      clip-path: polygon(100% 0, 80% 0, 78% 16%, 75% 31%, 70% 46%, 64% 59%, 57% 69%, 48% 80%, 38% 87%, 28% 91%, 19% 94%, 9% 97%, 0 100%, 100% 100%);
       @media screen and (max-width:1200px){
->>>>>>> master
-
-        background-position:20%;
+        clip-path: none;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        left:0;
+        width:100%;
+        height:30vh;
+      }
+      @media screen and (max-width:760px) and (max-height:736px){
+        height:40vh;
       }
     }
     .banner-collect{
@@ -44,17 +44,11 @@
     }
     .banner-nav{
       width:250px;
-      margin-left:5px;
       height:250px;
       overflow: hidden;
       img{height:100%;}
-<<<<<<< HEAD
-      @media screen and (max-width:768px){
-        @include size(180px,180px);
-=======
       @media screen and (max-width:640px){
         @include size(120px,120px);
->>>>>>> master
       }
     }
     .mouse-wheel {
@@ -111,19 +105,21 @@
   img{width:100%;}
 }
 #slide1 {
-  background: #ff00cc;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #slide2 {
   background:#cad2dd;
 }
 
-@media screen and (max-width:$md) {
+@media screen and (max-width:$lg) {
     #section0 .fp-controlArrow {
         border-width: 15px 0 15px 15px;
     }
     .article-brand {
       width:100%;
+      top:0;
+      bottom:0;
     }
 }
